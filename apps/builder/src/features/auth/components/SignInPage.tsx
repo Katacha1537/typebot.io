@@ -42,7 +42,7 @@ export const SignInPage = ({ type }: Props) => {
       ) : (
         <Text>
           {t('auth.register.alreadyHaveAccountLabel.preLink')}{' '}
-          <TextLink href="/signin">
+          <TextLink href="https://jeffecom.com/comunidade/">
             {t('auth.register.alreadyHaveAccountLabel.link')}
           </TextLink>
         </Text>
