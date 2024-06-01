@@ -50,7 +50,7 @@
   "auth.register.alreadyHaveAccountLabel.preLink": "Já tem uma conta?",
   "auth.register.heading": "Criar uma conta",
   "auth.signin.heading": "Entrar no ChatEcom",
-  "auth.signin.noAccountLabel.link": "Registre-se gratuitamente",
+  "auth.signin.noAccountLabel.link": "Registre-se aqui",
   "auth.signin.noAccountLabel.preLink": "Não tem uma conta?",
   "auth.signinErrorToast.description": "As inscrições estão desativadas.",
   "auth.signinErrorToast.title": "Não autorizado",
