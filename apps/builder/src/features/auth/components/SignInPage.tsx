@@ -35,7 +35,7 @@ export const SignInPage = ({ type }: Props) => {
       {type === 'signin' ? (
         <Text>
           {t('auth.signin.noAccountLabel.preLink')}{' '}
-          <TextLink href="/register">
+          <TextLink href="https://jeffecom.com/comunidade/">
             {t('auth.signin.noAccountLabel.link')}
           </TextLink>
         </Text>
