@@ -41,24 +41,23 @@ export const AlmostReachedChatsLimitEmail = ({
         </MjmlSection>
         <MjmlSection padding="0 24px" cssClass="smooth">
           <MjmlColumn>
-            <Text>Your bots are chatting a lot. That&apos;s amazing. 💙</Text>
+            <Text>Seus bots estão conversando muito. Isso é incrível. 💙</Text>
             <Text>
-              Your workspace <strong>{workspaceName}</strong> has used{' '}
-              {usagePercent}% of the included chats this month. Once you hit{' '}
-              {readableChatsLimit} chats, you will pay as you go for additional
-              chats.
+              Seu workspace <strong>{workspaceName}</strong> usou{' '}
+              {usagePercent}% dos chats incluídos este mês. Uma vez que você bateu{' '}
+              {readableChatsLimit} bate-papos, você pagará conforme usar.
             </Text>
             <Text>
-              Your progress can be monitored on your workspace dashboard
-              settings.
+            Seu progresso pode ser monitorado no painel do seu espaço de trabalho
+            configurações.
             </Text>
             <Text>
-              Check out the{' '}
-              <a href="https://typebot.io/pricing">pricing page</a> for
-              information about the pay as you go tiers.
+            Confira a{' '}
+              <a href="https://jeffecom.com/comunidade/">página de preços</a> para
+ informações sobre os níveis de pagamento conforme o uso.
             </Text>
             <Text>
-              As a reminder, your billing cycle ends on {readableResetDate}.
+            Lembre-se de que seu ciclo de faturamento termina em {readableResetDate}.
             </Text>
           </MjmlColumn>
         </MjmlSection>
@@ -74,6 +73,6 @@ export const sendAlmostReachedChatsLimitEmail = ({
   ComponentProps<typeof AlmostReachedChatsLimitEmail>) =>
   sendEmail({
     to,
-    subject: "You're close to your chats limit",
+    subject: "Você está perto do limite de bate-papos",
     html: render(<AlmostReachedChatsLimitEmail {...props} />).html,
   })

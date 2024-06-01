@@ -38,16 +38,16 @@ export const ReachedChatsLimitEmail = ({
         <MjmlSection padding="0 24px" cssClass="smooth">
           <MjmlColumn>
             <Text>
-              It just happened, you&apos;ve reached your monthly{' '}
-              {readableChatsLimit} chats limit 😮
+            Aconteceu, você atingiu seu valor mensal{' '}
+              {readableChatsLimit} limite de bate-papo 😮
             </Text>
             <Text>
-              If you&apos;d like your bots to continue chatting with your users
-              this month, then you need to upgrade your plan. 🚀
+            Se você quiser que seus bots continuem conversando com seus usuários
+ este mês, então você precisa atualizar seu plano. 🚀
             </Text>
 
             <MjmlSpacer height="24px" />
-            <Button link={url}>Upgrade workspace</Button>
+            <Button link={url}>Mudar Plano</Button>
           </MjmlColumn>
         </MjmlSection>
       </MjmlBody>
@@ -62,6 +62,6 @@ export const sendReachedChatsLimitEmail = ({
   ComponentProps<typeof ReachedChatsLimitEmail>) =>
   sendEmail({
     to,
-    subject: "You've reached your chats limit",
+    subject: "Você atingiu seu limite de bate-papos",
     html: render(<ReachedChatsLimitEmail {...props} />).html,
   })

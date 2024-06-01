@@ -46,7 +46,7 @@ export const DefaultBotNotificationEmail = ({
             )
           })}
           <MjmlSpacer height="24px" />
-          <Button link={resultsUrl}>Go to results</Button>
+          <Button link={resultsUrl}>Ir para resultados</Button>
         </MjmlColumn>
       </MjmlSection>
     </MjmlBody>

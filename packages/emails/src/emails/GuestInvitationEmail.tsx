@@ -38,18 +38,18 @@ export const GuestInvitationEmail = ({
       <MjmlSection padding="0 24px" cssClass="smooth">
         <MjmlColumn>
           <Text>
-            You have been invited by {hostEmail} to collaborate on his typebot{' '}
+          Você foi convidado por {hostEmail} para colaborar em seu ecomBot{' '}
             <strong>{typebotName}</strong>.
           </Text>
           <Text>
-            From now on you will see this typebot in your dashboard under his
+            De agora em diante você verá este typebot em seu painel sob o dele
             workspace &quot;{workspaceName}&quot; 👍
           </Text>
           <Text>
-            Make sure to log in as <i>{guestEmail}</i>.
+          Certifique-se de fazer login como <i>{guestEmail}</i>.
           </Text>
           <MjmlSpacer height="24px" />
-          <Button link={url}>Go to typebot</Button>
+          <Button link={url}>Vá para o ChatEcom</Button>
         </MjmlColumn>
       </MjmlSection>
     </MjmlBody>
@@ -62,6 +62,6 @@ export const sendGuestInvitationEmail = ({
 }: Pick<SendMailOptions, 'to'> & ComponentProps<typeof GuestInvitationEmail>) =>
   sendEmail({
     to,
-    subject: "You've been invited to collaborate 🤝",
+    subject: "Você foi convidado para colaborar 🤝",
     html: render(<GuestInvitationEmail {...props} />).html,
   })

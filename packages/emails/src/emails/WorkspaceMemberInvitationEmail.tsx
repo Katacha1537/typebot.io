@@ -36,17 +36,17 @@ export const WorkspaceMemberInvitation = ({
       <MjmlSection padding="0 24px" cssClass="smooth">
         <MjmlColumn>
           <Text>
-            You have been invited by {hostEmail} to collaborate on his workspace{' '}
-            <strong>{workspaceName}</strong> as a team member.
+          Você foi convidado por {hostEmail} colaborar em seu workspace{' '}
+            <strong>{workspaceName}</strong> como membro da equipe.
           </Text>
           <Text>
-            From now on you will see this workspace in your dashboard 👍
+          A partir de agora você verá este espaço de trabalho em seu painel 👍
           </Text>
           <Text>
-            Make sure to log in as <i>{guestEmail}</i>.
+          Certifique-se de fazer login como <i>{guestEmail}</i>.
           </Text>
           <MjmlSpacer height="24px" />
-          <Button link={url}>Go to workspace</Button>
+          <Button link={url}>Va para o workspace</Button>
         </MjmlColumn>
       </MjmlSection>
     </MjmlBody>
@@ -60,6 +60,6 @@ export const sendWorkspaceMemberInvitationEmail = ({
   ComponentProps<typeof WorkspaceMemberInvitation>) =>
   sendEmail({
     to,
-    subject: "You've been invited to collaborate 🤝",
+    subject: "Você foi convidado 🤝",
     html: render(<WorkspaceMemberInvitation {...props} />).html,
   })

@@ -51,6 +51,7 @@ export async function POST(req: Request) {
     )
 
   const conn = connect({ url: env.DATABASE_URL })
+  console.log("conectado: ", conn)
 
   const chatSession = await conn.execute(
     'select state from ChatSession where id=?',
