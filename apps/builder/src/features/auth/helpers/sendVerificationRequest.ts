@@ -10,6 +10,6 @@ export const sendVerificationRequest = async ({ identifier, url }: Props) => {
     await sendMagicLinkEmail({ url, to: identifier })
   } catch (err) {
     console.error(err)
-    throw new Error(`Magic link email could not be sent. See error above.`)
+    throw new Error(`Não foi possível enviar o e-mail do link mágico. Veja o erro acima.`)
   }
 }

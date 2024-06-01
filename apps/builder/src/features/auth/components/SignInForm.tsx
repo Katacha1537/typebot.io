@@ -82,39 +82,44 @@ export const SignInForm = ({
   const handleEmailChange = (e: ChangeEvent<HTMLInputElement>) =>
     setEmailValue(e.target.value)
 
-  const handleEmailSubmit = async (e: FormEvent) => {
+  const handleEmailSubmit = async (e) => {
     e.preventDefault()
     if (isMagicLinkSent) return
     setAuthLoading(true)
     try {
+      console.log('Attempting to sign in with email:', emailValue)
       const response = await signIn('email', {
         email: emailValue,
         redirect: false,
       })
+      console.log('Sign in response:', response)
       if (response?.error) {
-        if (response.error.includes('rate-limited'))
+        console.error('Sign in error:', response.error)
+        if (response.error.includes('rate-limited')) {
           showToast({
             status: 'info',
             description: t('auth.signinErrorToast.tooManyRequests'),
           })
-        else if (response.error.includes('sign-up-disabled'))
+        } else if (response.error.includes('sign-up-disabled')) {
           showToast({
             title: t('auth.signinErrorToast.title'),
             description: t('auth.signinErrorToast.description'),
           })
-        else
+        } else {
           showToast({
             status: 'info',
             description: t('errorMessage'),
             details: {
-              content: 'Check server logs to see relevent error message.',
+              content: 'Check server logs to see relevant error message.',
               lang: 'json',
             },
           })
+        }
       } else {
         setIsMagicLinkSent(true)
       }
     } catch (e) {
+      console.error('Error during sign in:', e)
       showToast({
         status: 'info',
         description: 'Ocorreu um erro ao fazer login',
