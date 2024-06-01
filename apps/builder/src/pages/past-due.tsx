@@ -25,8 +25,8 @@ export default function Page() {
         spacing={4}
       >
         <AlertIcon width="40px" />
-        <Heading fontSize="2xl">Your workspace has unpaid invoice(s).</Heading>
-        <Text>Head over to the billing portal to pay it.</Text>
+        <Heading fontSize="2xl">Seu workspace tem fatura(s) não paga(s).</Heading>
+        <Text>Acesse o portal de cobrança para pagar.</Text>
         {workspace?.id && (
           <BillingPortalButton workspaceId={workspace?.id} colorScheme="blue" />
         )}

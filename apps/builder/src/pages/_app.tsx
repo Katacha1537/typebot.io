@@ -51,7 +51,7 @@ const App = ({ Component, pageProps }: AppProps) => {
         position: 'top-right',
         status: 'success',
         title: 'Upgrade success!',
-        description: `Workspace upgraded to ${toTitleCase(newPlan)} 🎉`,
+        description: `Workspace atualizado para ${toTitleCase(newPlan)} 🎉`,
       })
   }, [router.query.stripe])
 

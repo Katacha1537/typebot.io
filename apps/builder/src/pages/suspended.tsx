@@ -23,15 +23,9 @@ export default function Page() {
         justifyContent="center"
         spacing={4}
       >
-        <Heading>Your workspace has been suspended.</Heading>
+        <Heading>Seu workspace está suspenso.</Heading>
         <Text>
-          We detected that one of your typebots does not comply with our{' '}
-          <TextLink
-            href="https://typebot.io/terms-of-service#scam-typebots"
-            isExternal
-          >
-            terms of service
-          </TextLink>
+        Detectamos que um de seus ecomBot não está em conformidade com nossos{' '} ou não foi feito pagamento do plano.
         </Text>
       </VStack>
     </>

@@ -11,7 +11,7 @@ const getOrigin = () => {
 
 export const Seo = ({
   title,
-  description = 'Create and publish conversational forms that collect 4 times more answers and feel native to your product',
+  description = 'Crie e publique formulários de conversação que coletam 4 vezes mais respostas e pareçam nativos do seu produto',
   imagePreviewUrl = `${getOrigin()}/images/og.png`,
 }: {
   title: string
@@ -19,7 +19,7 @@ export const Seo = ({
   currentUrl?: string
   imagePreviewUrl?: string
 }) => {
-  const formattedTitle = `${title} | Typebot`
+  const formattedTitle = `${title} | ChatEcom`
 
   return (
     <Head>
