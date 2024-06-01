@@ -1,4 +1,3 @@
-import { TextLink } from '@/components/TextLink'
 import { DashboardHeader } from '@/features/dashboard/components/DashboardHeader'
 import { useWorkspace } from '@/features/workspace/WorkspaceProvider'
 import { Heading, Text, VStack } from '@chakra-ui/react'
