@@ -35,6 +35,7 @@ console.log(databaseUrl)
     databaseUrl?.startsWith('postgresql://')
   ) {
     console.log('Executing for PostgreSQL schema')
+    console.log(`${command} --schema ${postgesqlSchemaPath}`)
     return executeCommand(`${command} --schema ${postgesqlSchemaPath}`)
   }
 
