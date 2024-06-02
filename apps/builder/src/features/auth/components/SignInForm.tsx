@@ -118,9 +118,10 @@ export const SignInForm = ({
         setIsMagicLinkSent(true)
       }
     } catch (e) {
+      console.log('eroo: ', e)
       showToast({
         status: 'info',
-        description: 'Ocorreu um erro ao fazer login',
+        description: `Ocorreu um erro ao fazer login: ${e}`,
       })
     }
     setAuthLoading(false)

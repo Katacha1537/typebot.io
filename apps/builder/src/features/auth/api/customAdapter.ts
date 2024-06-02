@@ -88,12 +88,7 @@ export function customAdapter(p: PrismaClient): Adapter {
       return createdUser as AdapterUser
     },
     getUser: async (id) => (await p.user.findUnique({ where: { id } })) as AdapterUser,
-    getUserByEmail: async (email) => {
-      console.log('getUserBy: ', email)
-      const userByEmail = await p.user.findUnique({ where: { email } })
-      console.log('userByEmail: ', userByEmail)
-      return userByEmail as AdapterUser
-    },
+    getUserByEmail: async (email) => (await p.user.findUnique({ where: { email } })) as AdapterUser,
     async getUserByAccount(provider_providerAccountId) {
       const account = await p.account.findUnique({
         where: { provider_providerAccountId },
