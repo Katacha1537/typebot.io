@@ -27,7 +27,7 @@ export const FolderPage = () => {
       onError: (error) => {
         if (error.data?.httpStatus === 404) router.replace('/typebots')
         showToast({
-          title: 'Folder not found',
+          title: 'Pasta não encontrada',
         })
       },
     }

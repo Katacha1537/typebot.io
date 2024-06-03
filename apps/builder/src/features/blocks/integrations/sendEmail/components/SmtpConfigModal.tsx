@@ -68,8 +68,8 @@ export const SmtpConfigModal = ({
       console.error(testSmtpError)
       setIsCreating(false)
       return showToast({
-        title: 'Invalid configuration',
-        description: "We couldn't send the test email with your configuration",
+        title: 'Configuração inválida',
+        description: "Não foi possível enviar o e-mail de teste com sua configuração",
       })
     }
     mutate({

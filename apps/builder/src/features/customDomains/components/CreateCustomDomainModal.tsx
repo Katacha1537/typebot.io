@@ -52,7 +52,7 @@ export const CreateCustomDomainModal = ({
     },
     onError: (error) => {
       showToast({
-        title: 'Error while creating custom domain',
+        title: 'Erro ao criar domínio personalizado',
         description: error.message,
       })
     },

@@ -38,7 +38,7 @@ export const UploadButton = ({
       })
 
       if (!upload.ok) {
-        showToast({ description: 'Error while trying to upload the file.' })
+        showToast({ description: 'Erro ao tentar fazer upload do arquivo.' })
         return
       }
 
@@ -51,7 +51,7 @@ export const UploadButton = ({
     setIsUploading(true)
     const file = e.target.files[0] as File | undefined
     if (!file)
-      return showToast({ description: 'Could not read file.', status: 'error' })
+      return showToast({ description: 'Não foi possível ler o arquivo.', status: 'error' })
     setFile(await compressFile(file))
     mutate({
       filePathProps,

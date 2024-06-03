@@ -61,7 +61,7 @@ export const SharePage = () => {
 
     if (!isCorrectlyFormatted) {
       showToast({
-        description: 'Can only contain lowercase letters, numbers and dashes.',
+        description: 'Só pode conter letras minúsculas, números e travessões.',
       })
       return false
     }
@@ -72,7 +72,7 @@ export const SharePage = () => {
     const isLongerThanAllowed = publicId.length >= 4
     if (!isLongerThanAllowed && isCloudProdInstance()) {
       showToast({
-        description: 'Should be longer than 4 characters',
+        description: 'Deve ter mais de 4 caracteres',
       })
       return false
     }
@@ -81,7 +81,7 @@ export const SharePage = () => {
 
     const { data } = await isPublicDomainAvailableQuery(publicId)
     if (!data?.isAvailable) {
-      showToast({ description: 'ID is already taken' })
+      showToast({ description: 'O ID já está em uso' })
       return false
     }
 
@@ -97,7 +97,7 @@ export const SharePage = () => {
         <Stack maxW="1000px" w="full" pt="10" spacing={10}>
           <Stack spacing={4} align="flex-start">
             <Heading fontSize="2xl" as="h1">
-              Your typebot link
+              Link do seu ecomBot
             </Heading>
             {typebot && (
               <EditableUrl
@@ -152,7 +152,7 @@ export const SharePage = () => {
 
           <Stack spacing={4}>
             <Heading fontSize="2xl" as="h1">
-              Embed your typebot
+              Embed seu ecomBot
             </Heading>
             <Wrap spacing={7}>
               {integrationsList.map((IntegrationButton, idx) => (

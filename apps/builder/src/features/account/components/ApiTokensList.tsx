@@ -35,7 +35,7 @@ export const ApiTokensList = ({ user }: Props) => {
   const { apiTokens, isLoading, mutate } = useApiTokens({
     userId: user.id,
     onError: (e) =>
-      showToast({ title: 'Failed to fetch tokens', description: e.message }),
+      showToast({ title: 'Falha ao buscar tokens', description: e.message }),
   })
   const {
     isOpen: isCreateOpen,

@@ -110,7 +110,7 @@ export const SignInForm = ({
             status: 'info',
             description: t('errorMessage'),
             details: {
-              content: 'Check server logs to see relevent error message.',
+              content: 'Verifique os logs do servidor para ver mensagens de erro relevantes.',
               lang: 'json',
             },
           })

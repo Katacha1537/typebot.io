@@ -113,7 +113,7 @@ export const TypebotProvider = ({
         }
         setIs404(false)
         showToast({
-          title: 'Could not fetch typebot',
+          title: 'Não foi possível buscar o typebot',
           description: error.message,
           details: {
             content: JSON.stringify(error.data?.zodError?.fieldErrors, null, 2),
@@ -137,7 +137,7 @@ export const TypebotProvider = ({
             typebotData?.currentUserMode === 'write'),
         onError: (error) => {
           showToast({
-            title: 'Could not fetch published typebot',
+            title: 'Não foi possível buscar o typebot publicado',
             description: error.message,
             details: {
               content: JSON.stringify(
@@ -156,7 +156,7 @@ export const TypebotProvider = ({
     trpc.typebot.updateTypebot.useMutation({
       onError: (error) =>
         showToast({
-          title: 'Error while updating typebot',
+          title: 'Erro ao atualizar o ChatEcom',
           description: error.message,
         }),
       onSuccess: () => {

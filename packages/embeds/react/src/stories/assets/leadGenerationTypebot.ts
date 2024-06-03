@@ -448,7 +448,7 @@ export const leadGenerationTypebot: StartTypebot = {
     general: { isBrandingEnabled: true, isInputPrefillEnabled: true },
     metadata: {
       description:
-        'Build beautiful conversational forms and embed them directly in your applications without a line of code. Triple your response rate and collect answers that has more value compared to a traditional form.',
+        'Crie lindos formulários de conversação e incorpore-os diretamente em seus aplicativos, sem uma linha de código. Triplique sua taxa de resposta e colete respostas que tenham mais valor em comparação com um formulário tradicional.',
     },
     typingEmulation: { speed: 300, enabled: true, maxDelay: 1.5 },
   },

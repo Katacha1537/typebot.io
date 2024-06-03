@@ -140,7 +140,7 @@ export const WhatsAppCredentialsModal = ({
       if (expiresAt !== 0) {
         showToast({
           description:
-            'Token expiration was not set to *never*. Create the token again with the correct expiration.',
+            'A expiração do token não foi definida como *nunca*. Crie o token novamente com a expiração correta.',
         })
         return false
       }
@@ -150,14 +150,14 @@ export const WhatsAppCredentialsModal = ({
         )
       ) {
         showToast({
-          description: 'Token does not have all the necessary scopes',
+          description: 'O token não possui todos os escopos necessários',
         })
         return false
       }
     } catch (err) {
       setIsVerifying(false)
       showToast({
-        description: 'Could not get system info',
+        description: 'Não foi possível obter informações do sistema',
         details:
           err instanceof Error
             ? { content: err.message, lang: 'json' }
@@ -188,7 +188,7 @@ export const WhatsAppCredentialsModal = ({
         if (message === 'taken') {
           setIsVerifying(false)
           showToast({
-            description: 'Phone number is already registered on Typebot',
+            description: 'O número de telefone já está registrado no ChatEcom',
           })
           return false
         }
@@ -199,7 +199,7 @@ export const WhatsAppCredentialsModal = ({
         console.error(err)
         setIsVerifying(false)
         showToast({
-          description: 'Could not verify if phone number is available',
+          description: 'Não foi possível verificar se o número de telefone está disponível',
         })
         return false
       }
@@ -207,7 +207,7 @@ export const WhatsAppCredentialsModal = ({
       console.error(err)
       setIsVerifying(false)
       showToast({
-        description: 'Could not get phone number info',
+        description: 'Não foi possível obter informações do número de telefone',
         details:
           err instanceof Error
             ? { content: err.message, lang: 'json' }

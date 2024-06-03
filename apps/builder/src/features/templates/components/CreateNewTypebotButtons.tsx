@@ -35,7 +35,7 @@ export const CreateNewTypebotButtons = () => {
     },
     onError: (error) => {
       showToast({
-        title: 'Failed to create bot',
+        title: 'Falha ao criar bot',
         description: error.message,
       })
     },
@@ -61,7 +61,7 @@ export const CreateNewTypebotButtons = () => {
     },
     onError: (error) => {
       showToast({
-        title: 'Failed to import bot',
+        title: 'Falha ao importar o bot',
         description: error.message,
       })
     },
