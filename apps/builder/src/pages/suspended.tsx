@@ -10,7 +10,7 @@ export default function Page() {
 
   useEffect(() => {
     if (!workspace || workspace.isSuspended) return
-    replace('/typebots')
+    replace('/ecombots')
   }, [replace, workspace])
 
   return (

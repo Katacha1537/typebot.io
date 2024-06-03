@@ -175,7 +175,7 @@ const nextConfig = {
                     value: `https://typebot.io/blog/(?<slug>.*)`,
                   },
                 ],
-                destination: `${process.env.LANDING_PAGE_URL}/typebots/:typebot*`,
+                destination: `${process.env.LANDING_PAGE_URL}/ecombots/:typebot*`,
               },
               {
                 source: '/styles/:style*',

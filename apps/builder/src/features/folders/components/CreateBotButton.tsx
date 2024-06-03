@@ -17,7 +17,7 @@ export const CreateBotButton = ({
 
   const handleClick = () =>
     router.push(
-      `/typebots/create?${stringify({
+      `/ecombots/create?${stringify({
         isFirstBot: !isFirstBot ? undefined : isFirstBot,
         folderId,
       })}`

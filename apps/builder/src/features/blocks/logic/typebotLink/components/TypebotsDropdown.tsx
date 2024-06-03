@@ -62,7 +62,7 @@ export const TypebotsDropdown = ({
           icon={<ExternalLinkIcon />}
           as={Link}
           href={{
-            pathname: '/typebots/[typebotId]/edit',
+            pathname: '/ecombots/[typebotId]/edit',
             query: {
               typebotId,
               parentId: query.parentId

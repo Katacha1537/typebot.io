@@ -17,7 +17,7 @@ test.describe('Email input block', () => {
       },
     ])
 
-    await page.goto(`/typebots/${typebotId}/edit`)
+    await page.goto(`/ecombots/${typebotId}/edit`)
 
     await page.click('text=Test')
     await expect(

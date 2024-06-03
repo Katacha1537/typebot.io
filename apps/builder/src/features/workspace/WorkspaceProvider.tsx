@@ -163,7 +163,7 @@ export const WorkspaceProvider = ({
   const switchWorkspace = (workspaceId: string) => {
     setWorkspaceIdInLocalStorage(workspaceId)
     setWorkspaceId(workspaceId)
-    replace('/typebots')
+    replace('/ecombots')
   }
 
   const createWorkspace = async (userFullName?: string) => {

@@ -15,7 +15,7 @@ test.describe('Set variable block', () => {
       }
     )
 
-    await page.goto(`/typebots/${typebotId}/edit`)
+    await page.goto(`/ecombots/${typebotId}/edit`)
     await page.click('text=Type a number...')
     await page.fill('input[placeholder="Select a variable"] >> nth=-1', 'Num')
     await page.getByRole('menuitem', { name: 'Create Num' }).click()
@@ -83,7 +83,7 @@ test.describe('Set variable block', () => {
       }
     )
 
-    await page.goto(`/typebots/${typebotId}/edit`)
+    await page.goto(`/ecombots/${typebotId}/edit`)
     await page.getByText('Transcription =').click()
     await expect(page.getByText('Save in results?')).toBeVisible()
     await page.locator('input[type="text"]').click()
