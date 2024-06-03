@@ -24,7 +24,7 @@ export const EmojiOrImageIcon = ({
             src={icon}
             boxSize={boxSize}
             objectFit={isSvgSrc(icon) ? undefined : 'cover'}
-            alt="typebot icon"
+            alt="chatEcom icon"
             rounded="10%"
           />
         ) : (

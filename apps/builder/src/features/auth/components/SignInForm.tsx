@@ -74,7 +74,7 @@ export const SignInForm = ({
       showToast({
         status: 'info',
         description:
-          'Your account has suspicious activity and is being reviewed by our team. Feel free to contact us.',
+          'Sua conta apresenta atividades suspeitas e está sendo analisada por nossa equipe. Sinta-se livre para nos contatar.',
       })
     }
   }, [router.isReady, router.query.error, showToast])
