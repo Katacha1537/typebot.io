@@ -19,7 +19,7 @@ export const Seo = ({
   currentUrl?: string
   imagePreviewUrl?: string
 }) => {
-  const formattedTitle = `${title} | ChatEcom`
+  const formattedTitle = `${title} | ChatEco`
 
   return (
     <Head>
