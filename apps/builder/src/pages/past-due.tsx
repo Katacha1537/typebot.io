@@ -12,7 +12,7 @@ export default function Page() {
 
   useEffect(() => {
     if (!workspace || workspace.isPastDue) return
-    replace('/ecombots')
+    replace('/typebots')
   }, [replace, workspace])
 
   return (

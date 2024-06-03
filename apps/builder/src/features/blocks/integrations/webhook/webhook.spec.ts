@@ -19,7 +19,7 @@ test.describe('Builder', () => {
       }
     )
     await createWebhook(typebotId, { method: HttpMethod.POST })
-    await page.goto(`/ecombots/${typebotId}/edit`)
+    await page.goto(`/typebots/${typebotId}/edit`)
     await page.click('text=Configure...')
     await page.fill(
       'input[placeholder="Paste URL..."]',
@@ -42,7 +42,7 @@ test.describe('Builder', () => {
     )
     await createWebhook(typebotId)
 
-    await page.goto(`/ecombots/${typebotId}/edit`)
+    await page.goto(`/typebots/${typebotId}/edit`)
     await page.click('text=Configure...')
     await page.fill(
       'input[placeholder="Paste URL..."]',

@@ -90,7 +90,7 @@ export const ResultsPage = () => {
               colorScheme={!isAnalytics ? 'blue' : 'gray'}
               variant={!isAnalytics ? 'outline' : 'ghost'}
               size="sm"
-              href={`/ecombots/${typebot?.id}/results`}
+              href={`/typebots/${typebot?.id}/results`}
             >
               <Text>Submissions</Text>
               {(stats?.totalStarts ?? 0) > 0 && (
@@ -103,7 +103,7 @@ export const ResultsPage = () => {
               as={Link}
               colorScheme={isAnalytics ? 'blue' : 'gray'}
               variant={isAnalytics ? 'outline' : 'ghost'}
-              href={`/ecombots/${typebot?.id}/results/analytics`}
+              href={`/typebots/${typebot?.id}/results/analytics`}
               size="sm"
             >
               Analytics

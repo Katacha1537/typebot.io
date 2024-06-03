@@ -33,7 +33,7 @@ const parseChatwootOpenCode = ({
   window.$chatwoot.setCustomAttributes({
     typebot_result_url: "${
       env.NEXTAUTH_URL
-    }/ecombots/${typebotId}/results?id=${resultId}",
+    }/typebots/${typebotId}/results?id=${resultId}",
   });
   window.$chatwoot.toggle("open");
   `

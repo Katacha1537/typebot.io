@@ -39,7 +39,7 @@ export const CustomDomainsDropdown = ({
       enabled: !!workspace?.id,
       onError: (error) => {
         showToast({
-          title: 'Erro ao buscar domínios personalizados',
+          title: 'Error while fetching custom domains',
           description: error.message,
         })
       },
@@ -51,7 +51,7 @@ export const CustomDomainsDropdown = ({
     },
     onError: (error) => {
       showToast({
-        title: 'Erro ao excluir domínio personalizado',
+        title: 'Error while deleting custom domain',
         description: error.message,
       })
     },

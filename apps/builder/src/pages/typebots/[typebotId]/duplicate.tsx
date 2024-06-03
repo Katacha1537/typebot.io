@@ -16,7 +16,7 @@ const Page = () => {
   const [selectedWorkspaceId, setSelectedWorkspaceId] = useState<string>()
   const { mutate, isLoading } = trpc.typebot.importTypebot.useMutation({
     onSuccess: (data) => {
-      push(`/ecombots/${data.typebot.id}/edit`)
+      push(`/typebots/${data.typebot.id}/edit`)
     },
   })
 

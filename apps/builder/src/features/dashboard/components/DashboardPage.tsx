@@ -43,7 +43,7 @@ export const DashboardPage = () => {
       createCustomCheckoutSession({
         email: user.email,
         workspaceId: workspace.id,
-        returnUrl: `${window.location.origin}/ecombots`,
+        returnUrl: `${window.location.origin}/typebots`,
       })
     }
     if (workspace && subscribePlan && user && workspace.plan === 'FREE') {

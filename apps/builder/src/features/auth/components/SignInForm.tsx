@@ -58,7 +58,7 @@ export const SignInForm = ({
   useEffect(() => {
     if (status === 'authenticated') {
       const redirectPath = router.query.redirectPath?.toString()
-      router.replace(redirectPath ? sanitizeUrl(redirectPath) : '/ecombots')
+      router.replace(redirectPath ? sanitizeUrl(redirectPath) : '/typebots')
       return
     }
     ;(async () => {
@@ -110,7 +110,7 @@ export const SignInForm = ({
             status: 'info',
             description: t('errorMessage'),
             details: {
-              content: 'Verifique os logs do servidor para ver mensagens de erro relevantes.',
+              content: 'Check server logs to see relevent error message.',
               lang: 'json',
             },
           })

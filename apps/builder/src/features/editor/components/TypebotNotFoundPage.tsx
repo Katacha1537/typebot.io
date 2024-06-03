@@ -36,7 +36,7 @@ export const TypebotNotFoundPage = () => {
           </VStack>
           <Button
             as={Link}
-            href="/ecombots"
+            href="/typebots"
             colorScheme="blue"
             leftIcon={<ChevronLeftIcon />}
           >

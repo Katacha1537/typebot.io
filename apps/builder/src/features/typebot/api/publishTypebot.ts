@@ -108,7 +108,7 @@ export const publishTypebot = authenticatedProcedure
       if (env.MESSAGE_WEBHOOK_URL && riskLevel !== 100 && riskLevel > 60)
         await fetch(env.MESSAGE_WEBHOOK_URL, {
           method: 'POST',
-          body: `⚠️ Suspicious typebot to be reviewed: ${existingTypebot.name} (${env.NEXTAUTH_URL}/ecombots/${existingTypebot.id}/edit) (workspace: ${existingTypebot.workspaceId})`,
+          body: `⚠️ Suspicious typebot to be reviewed: ${existingTypebot.name} (${env.NEXTAUTH_URL}/typebots/${existingTypebot.id}/edit) (workspace: ${existingTypebot.workspaceId})`,
         }).catch((err) => {
           console.error('Failed to send message', err)
         })

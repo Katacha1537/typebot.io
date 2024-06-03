@@ -25,9 +25,9 @@ export const FolderPage = () => {
       enabled: !!workspace && !!router.query.id,
       retry: 0,
       onError: (error) => {
-        if (error.data?.httpStatus === 404) router.replace('/ecombots')
+        if (error.data?.httpStatus === 404) router.replace('/typebots')
         showToast({
-          title: 'Pasta não encontrada',
+          title: 'Folder not found',
         })
       },
     }

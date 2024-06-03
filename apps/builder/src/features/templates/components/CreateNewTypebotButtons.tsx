@@ -35,7 +35,7 @@ export const CreateNewTypebotButtons = () => {
     },
     onError: (error) => {
       showToast({
-        title: 'Falha ao criar bot',
+        title: 'Failed to create bot',
         description: error.message,
       })
     },
@@ -61,13 +61,13 @@ export const CreateNewTypebotButtons = () => {
     },
     onError: (error) => {
       showToast({
-        title: 'Falha ao importar o bot',
+        title: 'Failed to import bot',
         description: error.message,
       })
     },
     onSuccess: (data) => {
       router.push({
-        pathname: `/ecombots/${data.typebot.id}/edit`,
+        pathname: `/typebots/${data.typebot.id}/edit`,
         query:
           router.query.isFirstBot === 'true'
             ? {
