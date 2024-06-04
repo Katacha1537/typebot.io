@@ -44,14 +44,14 @@ export const ProgressBarForm = ({
 
   return (
     <SwitchWithRelatedSettings
-      label={'Enable progress bar?'}
+      label={'Habilitar Barra de Progresso?'}
       initialValue={progressBar?.isEnabled ?? defaultProgressBarIsEnabled}
       onCheckChange={updateEnabled}
     >
       <DropdownList
         size="sm"
         direction="row"
-        label="Placement:"
+        label="Posição:"
         currentItem={progressBar?.placement ?? defaultProgressBarPlacement}
         onItemSelect={updatePlacement}
         items={progressBarPlacements}
@@ -59,7 +59,7 @@ export const ProgressBarForm = ({
 
       <HStack justifyContent="space-between">
         <FormLabel mb="0" mr="0">
-          Background color:
+          Cor de fundo:
         </FormLabel>
         <ColorPicker
           defaultValue={
@@ -70,7 +70,7 @@ export const ProgressBarForm = ({
       </HStack>
       <HStack justifyContent="space-between">
         <FormLabel mb="0" mr="0">
-          Color:
+          Cor:
         </FormLabel>
         <ColorPicker
           defaultValue={progressBar?.color ?? defaultProgressBarColor}
@@ -78,7 +78,7 @@ export const ProgressBarForm = ({
         />
       </HStack>
       <NumberInput
-        label="Thickness:"
+        label="Grossura:"
         direction="row"
         withVariableButton={false}
         maxW="100px"
@@ -89,7 +89,7 @@ export const ProgressBarForm = ({
       <DropdownList
         size="sm"
         direction="row"
-        label="Position when embedded:"
+        label="Posição quando embedded:"
         moreInfoTooltip='Select "fixed" to always position the progress bar at the top of the window even though your bot is embedded. Select "absolute" to position the progress bar at the top of the chat container.'
         currentItem={progressBar?.position ?? defaultProgressBarPosition}
         onItemSelect={updatePosition}

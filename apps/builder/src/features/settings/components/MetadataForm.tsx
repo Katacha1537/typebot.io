@@ -57,7 +57,7 @@ export const MetadataForm = ({
     <Stack spacing="6">
       <Stack>
         <FormLabel mb="0" htmlFor="icon">
-          Icon:
+          Icone:
         </FormLabel>
         <Popover isLazy placement="top">
           <PopoverTrigger>
@@ -88,7 +88,7 @@ export const MetadataForm = ({
       </Stack>
       <Stack>
         <FormLabel mb="0" htmlFor="image">
-          Image:
+          Imagem Preview:
         </FormLabel>
         <Popover isLazy placement="top">
           <PopoverTrigger>
@@ -116,7 +116,7 @@ export const MetadataForm = ({
         </Popover>
       </Stack>
       <TextInput
-        label="Title:"
+        label="Titulo:"
         defaultValue={metadata?.title ?? typebotName}
         onChange={handleTitleChange}
       />
@@ -125,21 +125,21 @@ export const MetadataForm = ({
           metadata?.description ?? defaultSettings.metadata.description
         }
         onChange={handleDescriptionChange}
-        label="Description:"
+        label="Descrição:"
       />
       <TextInput
         defaultValue={metadata?.googleTagManagerId}
         placeholder="GTM-XXXXXX"
         onChange={handleGoogleTagManagerIdChange}
         label="Google Tag Manager ID:"
-        moreInfoTooltip="Do not include it if you are embedding your typebot in an existing website. GTM should be installed in the parent website instead."
+        moreInfoTooltip="Não o inclua se estiver incorporando seu ecomBot em um site existente. O GTM deve ser instalado no site pai."
       />
       <Stack>
         <HStack as={FormLabel} mb="0" htmlFor="head">
-          <Text>Custom head code:</Text>
+          <Text>Head costumizado:</Text>
           <MoreInfoTooltip>
-            Will be pasted at the bottom of the header section, just above the
-            closing head tag. Only `meta` and `script` tags are allowed.
+          Será colado na parte inferior da seção do cabeçalho, logo acima do
+ fechando a tag principal. Somente tags `meta` e `script` são permitidas.
           </MoreInfoTooltip>
         </HStack>
         <CodeEditor

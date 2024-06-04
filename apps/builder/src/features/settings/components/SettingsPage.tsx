@@ -14,7 +14,7 @@ export const SettingsPage = () => {
   if (is404) return <TypebotNotFoundPage />
   return (
     <Flex overflow="hidden" h="100vh" flexDir="column">
-      <Seo title={typebot?.name ? `${typebot.name} | Settings` : 'Settings'} />
+      <Seo title={typebot?.name ? `${typebot.name} | Configuração` : 'Configuração'} />
       <TypebotHeader />
       <Flex height={`calc(100vh - ${headerHeight}px)`} w="full">
         <SettingsSideMenu />

@@ -149,7 +149,7 @@ export const ContainerThemeForm = <
                 <NumberInput
                   size="sm"
                   direction="row"
-                  label="Opacity:"
+                  label="Opacidade:"
                   width="100px"
                   min={0}
                   max={1}
@@ -175,7 +175,7 @@ export const ContainerThemeForm = <
             )}
             <HStack justify="space-between">
               <FormLabel mb="0" mr="0">
-                Shadow:
+                Sombra:
               </FormLabel>
               <HStack>
                 <DropdownList
@@ -228,7 +228,7 @@ const BorderThemeForm = ({
     <Stack>
       <HStack justifyContent="space-between">
         <FormLabel mb="0" mr="0">
-          Roundness:
+          Tamanho:
         </FormLabel>
         <HStack>
           <DropdownList
@@ -254,7 +254,7 @@ const BorderThemeForm = ({
 
       <HStack justifyContent="space-between">
         <FormLabel mb="0" mr="0">
-          Thickness:
+        Grossura:
         </FormLabel>
         <NumberInput
           size="sm"
@@ -271,7 +271,7 @@ const BorderThemeForm = ({
         <>
           <HStack justifyContent="space-between">
             <FormLabel mb="0" mr="0">
-              Color:
+              Cor:
             </FormLabel>
             <ColorPicker
               value={border?.color ?? defaultBorder?.color}
@@ -281,7 +281,7 @@ const BorderThemeForm = ({
           <NumberInput
             size="sm"
             direction="row"
-            label="Opacity:"
+            label="Opacidade:"
             width="100px"
             min={0}
             max={1}

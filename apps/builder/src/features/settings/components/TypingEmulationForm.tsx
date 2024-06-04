@@ -42,14 +42,14 @@ export const TypingEmulationForm = ({ typingEmulation, onUpdate }: Props) => {
   return (
     <Stack spacing={6}>
       <SwitchWithRelatedSettings
-        label={'Typing emulation'}
+        label={'Emulação de digitação'}
         initialValue={
           typingEmulation?.enabled ?? defaultSettings.typingEmulation.enabled
         }
         onCheckChange={updateIsEnabled}
       >
         <NumberInput
-          label="Words per minutes:"
+          label="Palavras por minuto:"
           data-testid="speed"
           defaultValue={
             typingEmulation?.speed ?? defaultSettings.typingEmulation.speed
@@ -62,7 +62,7 @@ export const TypingEmulationForm = ({ typingEmulation, onUpdate }: Props) => {
         />
         <HStack>
           <NumberInput
-            label="Max delay:"
+            label="Máximo delay:"
             data-testid="max-delay"
             defaultValue={
               typingEmulation?.maxDelay ??
@@ -75,12 +75,12 @@ export const TypingEmulationForm = ({ typingEmulation, onUpdate }: Props) => {
             direction="row"
             size="sm"
           />
-          <Text>seconds</Text>
+          <Text>Segundos</Text>
         </HStack>
 
         <SwitchWithLabel
-          label={'Disable on first message'}
-          moreInfoContent="When checked, typing emulation will be disabled for the first message sent by the bot."
+          label={'Desativar na primeira mensagem'}
+          moreInfoContent="Quando marcada, a emulação de digitação será desabilitada na primeira mensagem enviada pelo bot."
           onCheckChange={updateIsDisabledOnFirstMessage}
           initialValue={
             typingEmulation?.isDisabledOnFirstMessage ??
@@ -90,7 +90,7 @@ export const TypingEmulationForm = ({ typingEmulation, onUpdate }: Props) => {
       </SwitchWithRelatedSettings>
       <HStack>
         <NumberInput
-          label="Delay between messages:"
+          label="Delay entre mensagens:"
           defaultValue={
             typingEmulation?.delayBetweenBubbles ??
             defaultSettings.typingEmulation.delayBetweenBubbles
@@ -103,7 +103,7 @@ export const TypingEmulationForm = ({ typingEmulation, onUpdate }: Props) => {
           max={5}
           size="sm"
         />
-        <Text>seconds</Text>
+        <Text>Segundos</Text>
       </HStack>
     </Stack>
   )

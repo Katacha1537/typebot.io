@@ -66,26 +66,26 @@ export const GeneralSettingsForm = ({
   return (
     <Stack spacing={6}>
       <SwitchWithLabel
-        label="Prefill input"
+        label="Entrada de pré-preenchimento"
         initialValue={
           generalSettings?.isInputPrefillEnabled ??
           defaultSettings.general.isInputPrefillEnabled
         }
         onCheckChange={handleInputPrefillChange}
-        moreInfoContent="Inputs are automatically pre-filled whenever their associated variable has a value"
+        moreInfoContent="As entradas são automaticamente pré-preenchidas sempre que sua variável associada tiver um valor"
       />
       <SwitchWithLabel
-        label="Hide query params on bot start"
+        label="Ocultar parâmetros de consulta no início do bot"
         initialValue={
           generalSettings?.isHideQueryParamsEnabled ??
           defaultSettings.general.isHideQueryParamsEnabled
         }
         onCheckChange={handleHideQueryParamsChange}
-        moreInfoContent="If your URL contains query params, they will be automatically hidden when the bot starts."
+        moreInfoContent="Se o seu URL contiver parâmetros de consulta, eles serão ocultados automaticamente quando o bot for iniciado."
       />
       <SwitchWithRelatedSettings
-        label={'Remember user'}
-        moreInfoContent="If enabled, the chat state will be restored if the user comes back after exiting."
+        label={'Relembrar usuário'}
+        moreInfoContent="Se ativado, o estado do chat será restaurado se o usuário retornar após sair."
         initialValue={
           generalSettings?.rememberUser?.isEnabled ??
           (isDefined(generalSettings?.isNewResultOnRefreshEnabled)
@@ -100,19 +100,19 @@ export const GeneralSettingsForm = ({
             <MoreInfoTooltip>
               <Stack>
                 <Text>
-                  Choose{' '}
+                  Escolha{' '}
                   <Tag size="sm" bgColor={keyBg}>
                     session
                   </Tag>{' '}
-                  to remember the user as long as he does not closes the tab or
-                  the browser.
+                  para relembrar do usuário desde que ele não feche a aba ou
+ o navegador.
                 </Text>
                 <Text>
-                  Choose{' '}
+                  Escolha{' '}
                   <Tag size="sm" bgColor={keyBg}>
                     local
                   </Tag>{' '}
-                  to remember the user forever on the same device.
+                  para relembrar o usuário para sempre no mesmo dispositivo.
                 </Text>
               </Stack>
             </MoreInfoTooltip>

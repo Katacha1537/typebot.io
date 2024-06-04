@@ -24,10 +24,10 @@ export const SecurityForm = ({ security, onUpdate }: Props) => {
     <Stack spacing={6}>
       <FormControl>
         <FormLabel display="flex" flexShrink={0} gap="1" mr="0" mb="4">
-          Allowed origins
+        Origens permitidas
           <MoreInfoTooltip>
-            Restrict the execution of your typebot to specific website origins.
-            By default your bot can be executed on any website.
+          Restrinja a execução do seu ecomBot a origens específicas de sites.
+ Por padrão, seu bot pode ser executado em qualquer site.
           </MoreInfoTooltip>
         </FormLabel>
         <PrimitiveList

@@ -61,7 +61,7 @@ export const ChatContainerForm = ({
     <Stack>
       <HStack justifyContent="space-between">
         <FormLabel mb="0" mr="0">
-          Max width:
+          Largura maxima:
         </FormLabel>
         <HStack>
           <NumberInput
@@ -84,7 +84,7 @@ export const ChatContainerForm = ({
 
       <HStack justifyContent="space-between">
         <FormLabel mb="0" mr="0">
-          Max height:
+          Altura maxima:
         </FormLabel>
         <HStack>
           <NumberInput

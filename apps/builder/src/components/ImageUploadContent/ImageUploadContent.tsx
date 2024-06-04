@@ -93,7 +93,7 @@ export const ImageUploadContent = ({
             Emoji
           </Button>
         )}
-        {displayedTabs.includes('giphy') && (
+        {/*displayedTabs.includes('giphy') && (
           <Button
             variant={currentTab === 'giphy' ? 'solid' : 'ghost'}
             onClick={() => setCurrentTab('giphy')}
@@ -101,7 +101,7 @@ export const ImageUploadContent = ({
           >
             Giphy
           </Button>
-        )}
+        )*/}
         {displayedTabs.includes('unsplash') && (
           <Button
             variant={currentTab === 'unsplash' ? 'solid' : 'ghost'}

@@ -59,14 +59,14 @@ export const SettingsSideMenu = () => {
       pb="20"
     >
       <Heading fontSize="xl" textAlign="center">
-        Settings
+        Configurações
       </Heading>
       <Accordion allowMultiple defaultIndex={[0]}>
         <AccordionItem>
           <AccordionButton py={6}>
             <HStack flex="1" pl={2}>
               <MoreVerticalIcon transform={'rotate(90deg)'} />
-              <Heading fontSize="lg">General</Heading>
+              <Heading fontSize="lg">Gerais</Heading>
             </HStack>
             <AccordionIcon />
           </AccordionButton>
@@ -83,7 +83,7 @@ export const SettingsSideMenu = () => {
           <AccordionButton py={6}>
             <HStack flex="1" pl={2}>
               <ChatIcon />
-              <Heading fontSize="lg">Typing</Heading>
+              <Heading fontSize="lg">Digitação</Heading>
             </HStack>
             <AccordionIcon />
           </AccordionButton>
@@ -100,7 +100,7 @@ export const SettingsSideMenu = () => {
           <AccordionButton py={6}>
             <HStack flex="1" pl={2}>
               <LockedIcon />
-              <Heading fontSize="lg">Security</Heading>
+              <Heading fontSize="lg">Segurança</Heading>
             </HStack>
             <AccordionIcon />
           </AccordionButton>
