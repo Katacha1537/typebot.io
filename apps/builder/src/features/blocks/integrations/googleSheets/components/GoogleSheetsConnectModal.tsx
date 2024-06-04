@@ -50,7 +50,7 @@ export const GoogleSheetConnectModal = ({
           />
           <AlertInfo>
           Google não fornece permissões mais detalhadas
-           do que acesso de 'leitura' ou 'escrita'. É por
+           do que acesso de &apos;leitura&apos; ou &apos;escrita&apos;. É por
             isso que afirma que o chatEcom também pode excluir
              suas planilhas, mas isso não acontecerá.
           </AlertInfo>
