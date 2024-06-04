@@ -12,7 +12,7 @@ const getOrigin = () => {
 export const Seo = ({
   title,
   description = 'Crie e publique formulários de conversação que coletam 4 vezes mais respostas e pareçam nativos do seu produto',
-  imagePreviewUrl = `${getOrigin()}/images/og.png`,
+  imagePreviewUrl = `${getOrigin()}/images/logo.png`,
 }: {
   title: string
   description?: string

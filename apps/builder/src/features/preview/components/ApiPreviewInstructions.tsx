@@ -30,16 +30,16 @@ export const ApiPreviewInstructions = (props: StackProps) => {
     <Stack spacing={10} overflowY="auto" w="full" {...props}>
       <OrderedList spacing={6} px="1">
         <ListItem>
-          All your requests need to be authenticated with an API token.{' '}
+        Todas as suas solicitações precisam ser autenticadas com um token de API.{' '}
           <TextLink href="https://docs.typebot.io/api-reference/authentication">
-            See instructions
+          Veja as instruções
           </TextLink>
           .
         </ListItem>
         <ListItem>
           <Stack>
             <Text>
-              To start the chat, send a <Code>POST</Code> request to
+            Para iniciar o chat, envie um <Code>POST</Code> solicitar para
             </Text>
             <CodeEditor
               isReadOnly

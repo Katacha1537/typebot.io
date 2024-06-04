@@ -82,6 +82,7 @@ export const CreateCustomDomainModal = ({
     if (!hostnameRegex.test(inputValue)) return
     mutate({ name: inputValue, workspaceId })
   }
+  
   return (
     <Modal
       isOpen={isOpen}
@@ -92,7 +93,7 @@ export const CreateCustomDomainModal = ({
       <ModalOverlay />
       <ModalContent>
         <ModalHeader>
-          <Heading size="md">Add a custom domain</Heading>
+          <Heading size="md">Add um domínio personalizado</Heading>
         </ModalHeader>
         <ModalCloseButton />
         <ModalBody>
@@ -106,7 +107,7 @@ export const CreateCustomDomainModal = ({
             {hostname.domain !== '' && (
               <>
                 <Text>
-                  Add the following record in your DNS provider to continue:
+                Adicione o seguinte registro ao seu provedor DNS para continuar:
                 </Text>
                 {hostname.subdomain ? (
                   <HStack
@@ -152,8 +153,8 @@ export const CreateCustomDomainModal = ({
                   </HStack>
                 )}
                 <Alert rounded="md">
-                  Depending on your provider, it might take some time for the
-                  changes to apply
+                Dependendo do seu provedor, pode levar algum tempo para que o
+ alterações a serem aplicadas
                 </Alert>
               </>
             )}

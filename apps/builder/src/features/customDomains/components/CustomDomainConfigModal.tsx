@@ -68,11 +68,11 @@ export const CustomDomainConfigModal = ({
           {txtVerification ? (
             <Stack spacing="4">
               <Text>
-                Please set the following <Code>TXT</Code> record on{' '}
+              Por favor defina o seguinte <Code>TXT</Code> record on{' '}
                 <Text as="span" fontWeight="bold">
                   {domainJson.apexName}
                 </Text>{' '}
-                to prove ownership of{' '}
+                para provar a propriedade de{' '}
                 <Text as="span" fontWeight="bold">
                   {domainJson.name}
                 </Text>
@@ -112,9 +112,9 @@ export const CustomDomainConfigModal = ({
               <Alert status="warning">
                 <AlertIcon />
                 <Text>
-                  If you are using this domain for another site, setting this
-                  TXT record will transfer domain ownership away from that site
-                  and break it. Please exercise caution when setting this
+                Se você estiver usando este domínio para outro site, definindo este
+ O registro TXT transferirá a propriedade do domínio para fora desse site
+ e quebrá-lo. Por favor, tenha cuidado ao definir isso
                   record.
                 </Text>
               </Alert>
@@ -126,13 +126,13 @@ export const CustomDomainConfigModal = ({
           ) : (
             <Stack spacing={4}>
               <Text>
-                To configure your{' '}
+              Para configurar seu{' '}
                 {recordType === 'A' ? 'apex domain' : 'subdomain'} (
                 <Box as="span" fontWeight="bold">
                   {recordType === 'A' ? domainJson.apexName : domainJson.name}
                 </Box>
-                ), set the following {recordType} record on your DNS provider to
-                continue:
+                ), defina o seguinte {recordType} registrar em seu provedor DNS para
+ continuar:
               </Text>
               <HStack justifyContent="space-between">
                 <Stack>
@@ -165,9 +165,9 @@ export const CustomDomainConfigModal = ({
               <Alert fontSize="sm">
                 <AlertIcon />
                 <Text>
-                  Note: for TTL, if <Code>86400</Code> is not available, set the
-                  highest value possible. Also, domain propagation can take up
-                  to an hour.
+                Nota: para TTL, se <Code>86400</Code> não está disponível, defina o
+ maior valor possível. Além disso, a propagação do domínio pode ocupar
+ a uma hora.
                 </Text>
               </Alert>
             </Stack>
