@@ -37,12 +37,11 @@ export const GoogleSheetConnectModal = ({
     <Modal isOpen={isOpen} onClose={onClose} size="lg">
       <ModalOverlay />
       <ModalContent>
-        <ModalHeader>Connect Spreadsheets</ModalHeader>
+        <ModalHeader>Conecte o Spreadsheets</ModalHeader>
         <ModalCloseButton />
         <ModalBody as={Stack} spacing="6">
           <Text>
-            Make sure to check all the permissions so that the integration works
-            as expected:
+          Certifique-se de verificar todas as permissões para que a integração funcione conforme o esperado:
           </Text>
           <Image
             src="/images/google-spreadsheets-scopes.png"
@@ -50,10 +49,10 @@ export const GoogleSheetConnectModal = ({
             rounded="md"
           />
           <AlertInfo>
-            Google does not provide more granular permissions than
-            &quot;read&quot; or &quot;write&quot; access. That&apos;s why it
-            states that Typebot can also delete your spreadsheets which it
-            won&apos;t.
+          Google não fornece permissões mais detalhadas
+           do que acesso de 'leitura' ou 'escrita'. É por
+            isso que afirma que o chatEcom também pode excluir
+             suas planilhas, mas isso não acontecerá.
           </AlertInfo>
           <Flex>
             <Button
@@ -70,7 +69,7 @@ export const GoogleSheetConnectModal = ({
               )}
               mx="auto"
             >
-              Continue with Google
+              Continue com Google
             </Button>
           </Flex>
         </ModalBody>
