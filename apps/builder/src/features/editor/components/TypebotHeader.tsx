@@ -1,3 +1,5 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
+
 import {
   Flex,
   HStack,
@@ -32,17 +34,18 @@ import { headerHeight } from '../constants'
 import { RightPanel, useEditor } from '../providers/EditorProvider'
 import { useTypebot } from '../providers/TypebotProvider'
 import { SupportBubble } from '@/components/SupportBubble'
-import { isCloudProdInstance } from '@/helpers/isCloudProdInstance'
+//import { isCloudProdInstance } from '@/helpers/isCloudProdInstance'
 import { useTranslate } from '@tolgee/react'
 import { GuestTypebotHeader } from './UnauthenticatedTypebotHeader'
 import { useKeyboardShortcuts } from '@/hooks/useKeyboardShortcuts'
 import { useWorkspace } from '@/features/workspace/WorkspaceProvider'
-import { Plan } from '@typebot.io/prisma'
+//import { Plan } from '@typebot.io/prisma'
 
 export const TypebotHeader = () => {
   const { typebot, publishedTypebot, currentUserMode } = useTypebot()
-  const { workspace } = useWorkspace()
+  //const { workspace } = useWorkspace()
 
+  /* eslint-disable-next-line @typescript-eslint/no-unused-vars */
   const { isOpen, onOpen } = useDisclosure()
   const headerBgColor = useColorModeValue('white', 'gray.900')
 
