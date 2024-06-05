@@ -96,7 +96,7 @@ export const Bot = (props: BotProps & { class?: string }) => {
         )
       }
       if (error.response.status === 400 || error.response.status === 403)
-        return setError(new Error('This bot is now closed.'))
+        return setError(new Error('Este bot está fechado'))
       if (error.response.status === 404)
         return setError(new Error("The bot you're looking for doesn't exist."))
       return setError(

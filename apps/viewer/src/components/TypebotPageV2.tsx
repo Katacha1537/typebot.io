@@ -91,7 +91,7 @@ export const TypebotPageV2 = ({
       )
       if (error) return setError(error)
       if (data?.hasReachedLimit)
-        return setError(new Error('This bot is now closed.'))
+        return setError(new Error('Este bot está fechado'))
       if (data?.result) {
         setResultId(data.result.id)
         if (

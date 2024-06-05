@@ -25,7 +25,7 @@ export const ImportTypebotFromFileButton = ({
         ...typebot,
         events: typebot.events ?? null,
         icon: typebot.icon ?? null,
-        name: typebot.name ?? 'Meu ecomBot',
+        name: typebot.name ?? 'Meu EcomBot',
       } as Typebot)
     } catch (err) {
       console.error(err)

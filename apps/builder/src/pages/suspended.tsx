@@ -24,7 +24,7 @@ export default function Page() {
       >
         <Heading>Seu workspace está suspenso.</Heading>
         <Text>
-        Detectamos que um de seus ecomBot não está em conformidade com nossos{' '} ou não foi feito pagamento do plano.
+        Detectamos que um de seus EcomBot não está em conformidade com nossos{' '} ou não foi feito pagamento do plano.
         </Text>
       </VStack>
     </>

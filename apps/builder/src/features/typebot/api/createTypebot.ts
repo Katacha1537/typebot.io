@@ -100,7 +100,7 @@ export const createTypebot = authenticatedProcedure
       data: {
         version: '6',
         workspaceId,
-        name: typebot.name ?? 'My ecomBot',
+        name: typebot.name ?? 'My EcomBot',
         icon: typebot.icon,
         selectedThemeTemplateId: typebot.selectedThemeTemplateId,
         groups,

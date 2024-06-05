@@ -127,7 +127,7 @@ export const ContainerThemeForm = <
       <Accordion allowToggle>
         <AccordionItem>
           <AccordionButton justifyContent="space-between">
-            Border
+            Borda
             <AccordionIcon />
           </AccordionButton>
           <AccordionPanel>
@@ -140,7 +140,7 @@ export const ContainerThemeForm = <
         </AccordionItem>
         <AccordionItem>
           <AccordionButton justifyContent="space-between">
-            Advanced
+          Avançado
             <AccordionIcon />
           </AccordionButton>
           <AccordionPanel as={Stack}>

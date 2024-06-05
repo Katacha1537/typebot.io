@@ -63,7 +63,7 @@ export const GoogleAnalyticsSettings = ({
           <h2>
             <AccordionButton>
               <Box flex="1" textAlign="left">
-                Advanced
+                Avançado
               </Box>
               <AccordionIcon />
             </AccordionButton>

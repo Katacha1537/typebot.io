@@ -38,7 +38,7 @@ export const GuestInvitationEmail = ({
       <MjmlSection padding="0 24px" cssClass="smooth">
         <MjmlColumn>
           <Text>
-          Você foi convidado por {hostEmail} para colaborar em seu ecomBot{' '}
+          Você foi convidado por {hostEmail} para colaborar em seu EcomBot{' '}
             <strong>{typebotName}</strong>.
           </Text>
           <Text>

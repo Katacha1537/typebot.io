@@ -132,7 +132,7 @@ export const MetadataForm = ({
         placeholder="GTM-XXXXXX"
         onChange={handleGoogleTagManagerIdChange}
         label="Google Tag Manager ID:"
-        moreInfoTooltip="Não o inclua se estiver incorporando seu ecomBot em um site existente. O GTM deve ser instalado no site pai."
+        moreInfoTooltip="Não o inclua se estiver incorporando seu EcomBot em um site existente. O GTM deve ser instalado no site pai."
       />
       <Stack>
         <HStack as={FormLabel} mb="0" htmlFor="head">

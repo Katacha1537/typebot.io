@@ -143,7 +143,7 @@ export const SendEmailSettings = ({ options, onOptionsChange }: Props) => {
         <AccordionItem>
           <AccordionButton>
             <HStack justifyContent="space-between" w="full">
-              <Text>Advanced</Text>
+              <Text>Avançado</Text>
               <AccordionIcon />
             </HStack>
           </AccordionButton>

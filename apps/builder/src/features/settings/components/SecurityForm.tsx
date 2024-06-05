@@ -26,7 +26,7 @@ export const SecurityForm = ({ security, onUpdate }: Props) => {
         <FormLabel display="flex" flexShrink={0} gap="1" mr="0" mb="4">
         Origens permitidas
           <MoreInfoTooltip>
-          Restrinja a execução do seu ecomBot a origens específicas de sites.
+          Restrinja a execução do seu EcomBot a origens específicas de sites.
  Por padrão, seu bot pode ser executado em qualquer site.
           </MoreInfoTooltip>
         </FormLabel>

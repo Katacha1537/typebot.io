@@ -86,7 +86,7 @@ export const OpenAIChatCompletionSettings = ({
             <AccordionItem>
               <AccordionButton>
                 <Text w="full" textAlign="left">
-                  Messages
+                  Mensagens
                 </Text>
                 <AccordionIcon />
               </AccordionButton>
@@ -106,7 +106,7 @@ export const OpenAIChatCompletionSettings = ({
             <AccordionItem>
               <AccordionButton>
                 <Text w="full" textAlign="left">
-                  Advanced settings
+                  Configurações Avançadas
                 </Text>
                 <AccordionIcon />
               </AccordionButton>
@@ -125,7 +125,7 @@ export const OpenAIChatCompletionSettings = ({
             <AccordionItem>
               <AccordionButton>
                 <Text w="full" textAlign="left">
-                  Save answer
+                  Salvar Resposta
                 </Text>
                 <AccordionIcon />
               </AccordionButton>

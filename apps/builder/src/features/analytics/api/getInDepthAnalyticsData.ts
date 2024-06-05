@@ -47,7 +47,7 @@ export const getInDepthAnalyticsData = authenticatedProcedure
       if (!typebot?.publishedTypebot)
         throw new TRPCError({
           code: 'NOT_FOUND',
-          message: 'Published ecomBot not found',
+          message: 'Published EcomBot not found',
         })
 
       const fromDate = parseFromDateFromTimeFilter(timeFilter, timeZone)

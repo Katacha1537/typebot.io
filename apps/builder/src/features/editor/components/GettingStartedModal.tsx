@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 import {
   useDisclosure,
   Modal,
@@ -121,8 +122,7 @@ export const GettingStartedModal = () => {
             </List>
           </Stack>
 
-          <Text>{t('editor.gettingStartedModal.editorBasics.list.label')}</Text>
-          <Stack spacing={4}>
+          {/*<Stack spacing={4}>
             <Heading fontSize="xl">
               {t('editor.gettingStartedModal.seeAction.label')} ({`<`}{' '}
               {t('editor.gettingStartedModal.seeAction.time')})
@@ -167,6 +167,7 @@ export const GettingStartedModal = () => {
               </AccordionItem>
             </Accordion>
           </Stack>
+          */}
         </ModalBody>
       </ModalContent>
     </Modal>
