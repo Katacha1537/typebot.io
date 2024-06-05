@@ -66,7 +66,7 @@ export const TypebotHeader = () => {
       flexShrink={0}
     >
       {isOpen && <SupportBubble autoShowDelay={0} />}
-      <LeftElements pos="absolute" left="1rem" {/*onHelpClick={handleHelpClick}*/} />
+      <LeftElements pos="absolute" left="1rem" /* onHelpClick={handleHelpClick} */ />
       <TypebotNav
         display={{ base: 'none', xl: 'flex' }}
         pos={{ base: 'absolute' }}
@@ -84,9 +84,9 @@ export const TypebotHeader = () => {
 }
 
 const LeftElements = ({
-  onHelpClick,
+  //onHelpClick,
   ...props
-}: StackProps & { onHelpClick: () => void }) => {
+}: StackProps /* & { onHelpClick: () => void } */) => {
   const { t } = useTranslate()
   const router = useRouter()
   const {
