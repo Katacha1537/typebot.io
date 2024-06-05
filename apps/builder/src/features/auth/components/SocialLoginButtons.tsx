@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 import { Stack, Button } from '@chakra-ui/react'
 import { GithubIcon } from '@/components/icons'
 import {
@@ -71,7 +72,7 @@ export const SocialLoginButtons = ({ providers }: Props) => {
           {t('auth.socialLogin.githubButton.label')}
         </Button>
       )}
-      {providers?.google && (
+      {/*providers?.google && (
         <Button
           leftIcon={<GoogleLogo />}
           onClick={handleGoogleClick}
@@ -84,7 +85,7 @@ export const SocialLoginButtons = ({ providers }: Props) => {
         >
           {t('auth.socialLogin.googleButton.label')}
         </Button>
-      )}
+      )*/}
       {providers?.facebook && (
         <Button
           leftIcon={<FacebookLogo />}
