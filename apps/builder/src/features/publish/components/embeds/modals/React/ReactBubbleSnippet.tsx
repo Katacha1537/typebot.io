@@ -1,3 +1,4 @@
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 import { CodeEditor } from '@/components/inputs/CodeEditor'
 import { useTypebot } from '@/features/editor/providers/TypebotProvider'
 import { BubbleProps } from '@typebot.io/nextjs'
