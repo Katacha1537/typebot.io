@@ -1,35 +1,29 @@
 import { DropdownList } from '@/components/DropdownList'
+import { NumberInput } from '@/components/inputs'
 import { CodeEditor } from '@/components/inputs/CodeEditor'
 import { SwitchWithLabel } from '@/components/inputs/SwitchWithLabel'
+import { SwitchWithRelatedSettings } from '@/components/SwitchWithRelatedSettings'
 import { TableList, TableListItemProps } from '@/components/TableList'
 import { useTypebot } from '@/features/editor/providers/TypebotProvider'
 import { useToast } from '@/hooks/useToast'
 import {
-  Stack,
-  HStack,
   Accordion,
-  AccordionItem,
   AccordionButton,
   AccordionIcon,
+  AccordionItem,
   AccordionPanel,
   Button,
+  HStack,
+  Stack,
   Text,
 } from '@chakra-ui/react'
 import {
-  KeyValue,
-  VariableForTest,
-  ResponseVariableMapping,
   HttpRequest,
   HttpRequestBlock,
+  KeyValue,
+  ResponseVariableMapping,
+  VariableForTest,
 } from '@typebot.io/schemas'
-import { useState, useMemo } from 'react'
-import { executeWebhook } from '../queries/executeWebhookQuery'
-import { convertVariablesForTestToVariables } from '../helpers/convertVariablesForTestToVariables'
-import { getDeepKeys } from '../helpers/getDeepKeys'
-import { QueryParamsInputs, HeadersInputs } from './KeyValueInputs'
-import { DataVariableInputs } from './ResponseMappingInputs'
-import { VariableForTestInputs } from './VariableForTestInputs'
-import { SwitchWithRelatedSettings } from '@/components/SwitchWithRelatedSettings'
 import {
   HttpMethod,
   defaultTimeout,
@@ -37,7 +31,13 @@ import {
   defaultWebhookBlockOptions,
   maxTimeout,
 } from '@typebot.io/schemas/features/blocks/integrations/webhook/constants'
-import { NumberInput } from '@/components/inputs'
+import { useMemo, useState } from 'react'
+import { convertVariablesForTestToVariables } from '../helpers/convertVariablesForTestToVariables'
+import { getDeepKeys } from '../helpers/getDeepKeys'
+import { executeWebhook } from '../queries/executeWebhookQuery'
+import { HeadersInputs, QueryParamsInputs } from './KeyValueInputs'
+import { DataVariableInputs } from './ResponseMappingInputs'
+import { VariableForTestInputs } from './VariableForTestInputs'
 
 type Props = {
   blockId: string
@@ -220,7 +220,7 @@ export const HttpRequestAdvancedConfigForm = ({
           </AccordionItem>
           <AccordionItem>
             <AccordionButton justifyContent="space-between">
-            Valores variáveis ​​para teste
+            Valores variáveis para teste
               <AccordionIcon />
             </AccordionButton>
             <AccordionPanel pt="4">
