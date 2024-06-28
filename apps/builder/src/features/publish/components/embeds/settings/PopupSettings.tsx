@@ -27,7 +27,7 @@ export const PopupSettings = ({ onUpdateSettings, ...props }: Props) => {
 
   return (
     <Stack {...props} spacing={4}>
-      <Heading size="sm">Popup settings</Heading>
+      <Heading size="sm">Popup configurações</Heading>
 
       <HStack pl={4}>
         <Text flexShrink={0}>Auto show</Text>
@@ -37,7 +37,7 @@ export const PopupSettings = ({ onUpdateSettings, ...props }: Props) => {
         />
         {isEnabled && (
           <>
-            <Text>after</Text>
+            <Text>Depois</Text>
             <NumberInput
               size="sm"
               w="70px"
@@ -45,7 +45,7 @@ export const PopupSettings = ({ onUpdateSettings, ...props }: Props) => {
               onValueChange={(val) => isDefined(val) && setInputValue(val)}
               withVariableButton={false}
             />
-            <Text>seconds</Text>
+            <Text>secondos</Text>
           </>
         )}
       </HStack>

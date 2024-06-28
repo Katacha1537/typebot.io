@@ -98,7 +98,7 @@ export const DropdownList = <T extends Item>({
                       : currentItem === item.value
                   )
                 )
-              : placeholder ?? 'Select an item'}
+              : placeholder ?? 'Selecione um item'}
           </chakra.span>
         </MenuButton>
         <Portal>

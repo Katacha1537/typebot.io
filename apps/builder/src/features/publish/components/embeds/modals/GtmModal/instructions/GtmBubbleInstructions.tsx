@@ -17,13 +17,13 @@ export const GtmBubbleInstructions = () => {
   return (
     <OrderedList spacing={4} pl={5}>
       <ListItem>
-        On your GTM account dashboard, click on <Code>Add a new tag</Code>
+      No painel da sua conta GTM, clique em <Code>Adicionar uma nova tag</Code>
       </ListItem>
       <ListItem>
-        Choose <Code>Custom HTML</Code> tag type
+      Escolha o tipo de tag <Code>HTML personalizado</Code>
       </ListItem>
       <ListItem>
-        Check <Code>Support document.write</Code>
+      Verifique <Code>Suporte document.write</Code>
       </ListItem>
       <ListItem>
         <Stack spacing={4}>

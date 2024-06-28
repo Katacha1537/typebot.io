@@ -29,17 +29,17 @@ export const GtmStandardInstructions = ({
   return (
     <OrderedList spacing={4} pl={5}>
       <ListItem>
-        On your GTM account dashboard, click on <Code>Add a new tag</Code>
+      No painel da sua conta GTM, clique em <Code>Adicionar uma nova tag</Code>
       </ListItem>
       <ListItem>
-        Choose <Code>Custom HTML tag</Code> type
+      Escolha o tipo de <Code>Tag HTML personalizada</Code>
       </ListItem>
       <ListItem>
-        Check <Code>Support document.write</Code>
+      Verifique <Code>Suporte document.write</Code>
       </ListItem>
       <ListItem>
         <Stack spacing={4}>
-          <Text>Paste the code below:</Text>
+          <Text>Cole o código abaixo:</Text>
           <CodeEditor value={headCode} isReadOnly lang="html" />
         </Stack>
       </ListItem>
@@ -54,8 +54,8 @@ export const GtmStandardInstructions = ({
             }
           />
           <Text>
-            On your web page, you need to have an element on which the typebot
-            will go:
+          Na sua página web, você precisa ter um elemento no qual o typebot
+          Irá:
           </Text>
           <CodeEditor value={elementCode} isReadOnly lang="html" />
         </Stack>

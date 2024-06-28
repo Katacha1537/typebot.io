@@ -182,8 +182,8 @@ export const WhatsAppModal = ({ isOpen, onClose }: ModalProps): JSX.Element => {
         <ModalBody as={Stack} spacing="6">
           {!hasProPerks(workspace) && (
             <UnlockPlanAlertInfo excludedPlans={['STARTER']}>
-              Upgrade your workspace to <PlanTag plan="PRO" /> to be able to
-              enable WhatsApp integration.
+              Atualize seu espaço de trabalho para <PlanTag plan="PRO" /> para poder
+              ativar a integração do WhatsApp.
             </UnlockPlanAlertInfo>
           )}
           {!isPublished && phoneNumberData?.id && (
@@ -192,7 +192,7 @@ export const WhatsAppModal = ({ isOpen, onClose }: ModalProps): JSX.Element => {
           <OrderedList spacing={4} pl="4">
             <ListItem>
               <HStack>
-                <Text>Select a phone number:</Text>
+                <Text>Selecione um número de telefone:</Text>
                 {workspace && (
                   <>
                     <WhatsAppCredentialsModal
@@ -221,7 +221,7 @@ export const WhatsAppModal = ({ isOpen, onClose }: ModalProps): JSX.Element => {
                   <Accordion allowToggle>
                     <AccordionItem>
                       <AccordionButton justifyContent="space-between">
-                        Configure integration
+                      Configurar integração
                         <AccordionIcon />
                       </AccordionButton>
                       <AccordionPanel as={Stack} spacing="4" pt="4">
@@ -230,19 +230,19 @@ export const WhatsAppModal = ({ isOpen, onClose }: ModalProps): JSX.Element => {
                             max={48}
                             min={0}
                             width="100px"
-                            label="Session expire timeout:"
+                            label="Tempo limite de expiração da sessão:"
                             defaultValue={
                               whatsAppSettings?.sessionExpiryTimeout
                             }
                             placeholder={defaultSessionExpiryTimeout.toString()}
-                            moreInfoTooltip="A number between 0 and 48 that represents the time in hours after which the session will expire if the user does not interact with the bot. The conversation restarts if the user sends a message after that expiration time."
+                            moreInfoTooltip="Um número entre 0 e 48 que representa o tempo em horas após o qual a sessão expirará caso o usuário não interaja com o bot. A conversa será reiniciada se o usuário enviar uma mensagem após esse prazo de expiração."
                             onValueChange={updateSessionExpiryTimeout}
                             withVariableButton={false}
                             suffix="hours"
                           />
                         </HStack>
                         <SwitchWithRelatedSettings
-                          label={'Start bot condition'}
+                          label={'Iniciar condição do bot'}
                           initialValue={isDefined(
                             whatsAppSettings?.startCondition
                           )}
@@ -269,7 +269,7 @@ export const WhatsAppModal = ({ isOpen, onClose }: ModalProps): JSX.Element => {
                                 />
                               </Flex>
                             )}
-                            addLabel="Add a comparison"
+                            addLabel="uma comparação"
                           >
                             {(props) => <WhatsAppComparisonItem {...props} />}
                           </TableList>
@@ -292,7 +292,7 @@ export const WhatsAppModal = ({ isOpen, onClose }: ModalProps): JSX.Element => {
                 </ListItem>
                 <ListItem>
                   <HStack>
-                    <Text>Publish your bot:</Text>
+                    <Text>Publique seu bot:</Text>
                     <PublishButton size="sm" isMoreMenuDisabled />
                   </HStack>
                 </ListItem>
@@ -302,7 +302,7 @@ export const WhatsAppModal = ({ isOpen, onClose }: ModalProps): JSX.Element => {
                       href={`https://wa.me/${phoneNumberData.name}?text=Start`}
                       isExternal
                     >
-                      Try it out
+                      Experimente
                     </TextLink>
                   </ListItem>
                 )}

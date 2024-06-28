@@ -9,8 +9,8 @@ export const ShopifyPopupInstructions = () => {
   return (
     <OrderedList spacing={4} pl={5}>
       <ListItem>
-        On your shop dashboard in the <Code>Themes</Code> page, click on{' '}
-        <Code>Actions {'>'} Edit code</Code>
+      No painel da sua loja, na página <Code>Temas</Code>, clique em{' '}
+      <Code>Ações {'>'} Editar código</Code>
       </ListItem>
       <ListItem>
         <Stack spacing={4}>
@@ -20,8 +20,8 @@ export const ShopifyPopupInstructions = () => {
             }
           />
           <Text>
-            In <Code>Layout {'>'} theme.liquid</Code> file, paste this code just
-            before the closing <Code>{'<head>'}</Code> tag:
+          No arquivo <Code>Layout {'>'} theme.liquid</Code>, cole este código apenas
+          antes da tag de fechamento <Code>{'<head>'}</Code>:
           </Text>
           <JavascriptPopupSnippet autoShowDelay={inputValue} />
         </Stack>

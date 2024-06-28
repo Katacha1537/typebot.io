@@ -131,7 +131,7 @@ export const GuestTypebotHeader = () => {
               isLoading={isNotDefined(typebot)}
               size="sm"
             >
-              Duplicate
+              Duplicar
             </Button>
           )}
           {router.pathname.includes('/edit') && isNotDefined(rightPanel) && (
@@ -152,12 +152,12 @@ export const GuestTypebotHeader = () => {
             <Divider orientation="vertical" h="25px" borderColor="gray.400" />
             <Button
               as={Link}
-              href={`/register`}
+              href={`/`}
               leftIcon={<TypebotLogo width="20px" />}
               variant="outline"
               size="sm"
             >
-              Try Typebot
+              Entrar ChatEcom
             </Button>
           </>
         )}

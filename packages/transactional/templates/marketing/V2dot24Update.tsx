@@ -72,25 +72,25 @@ export const V2dot24Update = ({}: Props) => (
           </Text>
           <Img
             src={`${imagesBaseUrl}/aiBlocks.jpg`}
-            alt="New AI blocks"
+            alt="Nova AI blocks"
             style={image}
           />
         </Section>
 
         <Section style={featureSection}>
           <Heading style={heading}>
-            Persist chat state between sessions.
+          Persistir no estado de bate-papo entre sessões.
           </Heading>
           <Text style={text}>
-            Now, if you enable the "Remember user" option, if the user comes
-            back to the typebot, it will display the previous chat state.
+          Agora, se você ativar a opção "Lembrar usuário", caso o usuário venha
+          de volta ao typebot, ele exibirá o estado anterior do chat.
             <br />
             <br />
-            It also works magically when your bot is embedded 🔥
+            Também funciona magicamente quando seu bot está incorporado 🔥
           </Text>
           <Img
             src={`${imagesBaseUrl}/saveChatState.gif`}
-            alt="Persist chat state demonstration"
+            alt="Demonstração do estado do chat persistente"
             style={image}
           />
         </Section>

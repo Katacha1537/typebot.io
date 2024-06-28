@@ -37,15 +37,15 @@ export const NotionModal = ({
         <ModalCloseButton />
         <ModalBody>
           {!isPublished && (
-            <AlertInfo mb="4">You need to publish your bot first.</AlertInfo>
+            <AlertInfo mb="4">Você precisa publicar seu bot primeiro.</AlertInfo>
           )}
           <OrderedList spacing={4}>
             <ListItem>
-              Type <Code>/embed</Code>
+            Digite <Code>/embed</Code>
             </ListItem>
             <ListItem>
               <Stack>
-                <Text>Paste your typebot URL</Text>
+                <Text>Cole o URL do seu typebot</Text>
                 <InputGroup size="sm">
                   <Input
                     type={'text'}

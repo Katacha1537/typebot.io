@@ -33,13 +33,13 @@ export const WordpressStandardInstructions = ({ publicId }: Props) => {
   return (
     <OrderedList spacing={4} pl={5}>
       <ListItem>
-        Install{' '}
+        Instalar{' '}
         <Link
           href="https://wordpress.org/plugins/typebot/"
           isExternal
           color={useColorModeValue('blue.500', 'blue.300')}
         >
-          the official Typebot WordPress plugin
+         o plugin oficial do ChatEcom WordPress
           <ExternalLinkIcon mx="2px" />
         </Link>
       </ListItem>
@@ -54,12 +54,12 @@ export const WordpressStandardInstructions = ({ publicId }: Props) => {
             }
           />
           <Text>
-            You can now place the following shortcode anywhere on your site:
+          Agora você pode colocar o seguinte código de acesso em qualquer lugar do seu site:
           </Text>
           <CodeEditor value={elementCode} lang="shell" isReadOnly />
           <Text>
-            Note: Your page templating system probably has a{' '}
-            <Code>Shortcode</Code> element (if not, use a text element).
+          Observação: seu sistema de modelos de página provavelmente tem um{' '}
+          Elemento <Code>Shortcode</Code> (caso contrário, use um elemento de texto).
           </Text>
         </Stack>
       </ListItem>

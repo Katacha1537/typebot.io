@@ -72,7 +72,7 @@ export const NewVersionPopup = () => {
               </Stack>
               <Flex justifyContent="flex-end">
                 <Button size="sm" onClick={saveAndReload}>
-                  {typebot?.id ? 'Save and reload' : 'Reload'}
+                  {typebot?.id ? 'Salve e atualize' : 'Atualize'}
                 </Button>
               </Flex>
             </Stack>

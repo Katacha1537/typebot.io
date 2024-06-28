@@ -1,6 +1,7 @@
 import { MotionStack } from '@/components/MotionStack'
 import { Stack, Button, StackProps, Text, ButtonProps } from '@chakra-ui/react'
 import { BubbleIllustration } from './illustrations/BubbleIllustration'
+import Bubble from '../../../../../../../../packages/embeds/nextjs/src/index';
 
 type Props = StackProps & Pick<ButtonProps, 'isDisabled'>
 
@@ -26,7 +27,7 @@ export const BubbleMenuButton = (props: Props) => {
         <Text fontSize="lg" fontWeight="semibold">
           Bubble
         </Text>
-        <Text textColor="gray.500">Embed in a chat bubble</Text>
+        <Text textColor="gray.500">Incorporar em um Bubble de bate-papo</Text>
       </Stack>
     </MotionStack>
   )

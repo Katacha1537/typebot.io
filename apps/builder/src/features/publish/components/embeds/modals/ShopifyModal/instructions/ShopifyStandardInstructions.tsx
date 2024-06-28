@@ -30,14 +30,14 @@ export const ShopifyStandardInstructions = ({ publicId }: Props) => {
   return (
     <OrderedList spacing={4} pl={5}>
       <ListItem>
-        On your shop dashboard in the <Code>Themes</Code> page, click on{' '}
-        <Code>Actions {'>'} Edit code</Code>
+      No painel da sua loja, na página <Code>Temas</Code>, clique em{' '}
+      <Code>Ações {'>'} Editar código</Code>
       </ListItem>
       <ListItem>
         <Stack spacing={4}>
           <Text>
-            In <Code>Layout {'>'} theme.liquid</Code> file, paste this code just
-            before the closing <Code>{'<head>'}</Code> tag:
+          No arquivo <Code>Layout {'>'} theme.liquid</Code>, cole este código apenas
+          antes da tag de fechamento <Code>{'<head>'}</Code>:
           </Text>
 
           <CodeEditor value={headCode} lang="html" isReadOnly />
@@ -54,7 +54,7 @@ export const ShopifyStandardInstructions = ({ publicId }: Props) => {
             }
           />
           <Text>
-            Place an element on which the typebot will go in any file in the{' '}
+          Coloque um elemento no qual o typebot irá em qualquer arquivo no{' '}
             <Code>{'<body>'}</Code>:
           </Text>
           <CodeEditor value={elementCode} lang="html" isReadOnly />

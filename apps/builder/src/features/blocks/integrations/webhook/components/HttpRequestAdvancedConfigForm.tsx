@@ -124,7 +124,7 @@ export const HttpRequestAdvancedConfigForm = ({
   return (
     <>
       <SwitchWithRelatedSettings
-        label="Advanced configuration"
+        label="Configuração avançada"
         initialValue={
           options?.isAdvancedConfig ??
           defaultWebhookBlockOptions.isAdvancedConfig
@@ -132,8 +132,8 @@ export const HttpRequestAdvancedConfigForm = ({
         onCheckChange={updateAdvancedConfig}
       >
         <SwitchWithLabel
-          label="Execute on client"
-          moreInfoContent="If enabled, the webhook will be executed on the client. It means it will be executed in the browser of your visitor. Make sure to enable CORS and do not expose sensitive data."
+          label="Executar no cliente"
+          moreInfoContent="Se habilitado, o webhook será executado no cliente. Significa que será executado no navegador do seu visitante. Certifique-se de habilitar o CORS e não exponha dados confidenciais."
           initialValue={
             options?.isExecutedOnClient ??
             defaultWebhookBlockOptions.isExecutedOnClient
@@ -141,7 +141,7 @@ export const HttpRequestAdvancedConfigForm = ({
           onCheckChange={updateIsExecutedOnClient}
         />
         <HStack justify="space-between">
-          <Text>Method:</Text>
+          <Text>Método:</Text>
           <DropdownList
             currentItem={
               (webhook?.method ?? defaultWebhookAttributes.method) as HttpMethod
@@ -204,7 +204,7 @@ export const HttpRequestAdvancedConfigForm = ({
           </AccordionItem>
           <AccordionItem>
             <AccordionButton justifyContent="space-between">
-              Advanced parameters
+            Parâmetros avançados
               <AccordionIcon />
             </AccordionButton>
             <AccordionPanel pt="4">
@@ -220,7 +220,7 @@ export const HttpRequestAdvancedConfigForm = ({
           </AccordionItem>
           <AccordionItem>
             <AccordionButton justifyContent="space-between">
-              Variable values for test
+            Valores variáveis ​​para teste
               <AccordionIcon />
             </AccordionButton>
             <AccordionPanel pt="4">
@@ -241,7 +241,7 @@ export const HttpRequestAdvancedConfigForm = ({
           colorScheme="blue"
           isLoading={isTestResponseLoading}
         >
-          Test the request
+          Teste a solicitação
         </Button>
       )}
       {testResponse && (
@@ -253,7 +253,7 @@ export const HttpRequestAdvancedConfigForm = ({
         <Accordion allowMultiple>
           <AccordionItem>
             <AccordionButton justifyContent="space-between">
-              Save in variables
+            Salvar em variáveis
               <AccordionIcon />
             </AccordionButton>
             <AccordionPanel pt="4">

@@ -47,18 +47,18 @@ export const WordpressBubbleInstructions = ({ publicId }: Props) => {
   return (
     <OrderedList spacing={4} pl={5}>
       <ListItem>
-        Install{' '}
+        Instalar{' '}
         <Link
           href="https://wordpress.org/plugins/typebot/"
           isExternal
           color={useColorModeValue('blue.500', 'blue.300')}
         >
-          the official Typebot WordPress plugin
+          o plugin oficial do ChatEcom WordPress
           <ExternalLinkIcon mx="2px" />
         </Link>
       </ListItem>
       <ListItem>
-        Set <Code>Library version</Code> to{' '}
+      Defina <Code>Versão da biblioteca</Code> como{' '}
         <Code>
           {isCloudProdInstance()
             ? typebotCloudLibraryVersion
@@ -77,8 +77,8 @@ export const WordpressBubbleInstructions = ({ publicId }: Props) => {
             onThemeChange={setTheme}
           />
           <Text>
-            You can now place the following code snippet in the Typebot panel in
-            your WordPress admin:
+          Agora você pode colocar o seguinte trecho de código no painel Typebot em
+          seu administrador do WordPress:
           </Text>
           <CodeEditor value={initCode} lang="javascript" isReadOnly />
         </Stack>

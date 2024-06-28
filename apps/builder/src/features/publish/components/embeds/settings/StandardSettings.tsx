@@ -49,18 +49,18 @@ export const StandardSettings = ({
 
   return (
     <Stack {...props} spacing={4}>
-      <Heading size="sm">Window settings</Heading>
+      <Heading size="sm">Configurações da janela</Heading>
 
       <Stack pl="4" spacing={4}>
         <SwitchWithLabel
-          label="Set to fullscreen?"
+          label="Definir para tela cheia?"
           initialValue={isFullscreenChecked}
           onCheckChange={() => setIsFullscreenChecked(!isFullscreenChecked)}
         />
         {!isFullscreenChecked && (
           <>
             <Flex justify="space-between" align="center">
-              <Text>Width</Text>
+              <Text>Largura</Text>
               <HStack>
                 <Input
                   onChange={(e) =>
@@ -80,7 +80,7 @@ export const StandardSettings = ({
               </HStack>
             </Flex>
             <Flex justify="space-between" align="center">
-              <Text>Height</Text>
+              <Text>Altura</Text>
               <HStack>
                 <Input
                   onChange={(e) =>

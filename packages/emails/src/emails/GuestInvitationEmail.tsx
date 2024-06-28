@@ -42,7 +42,7 @@ export const GuestInvitationEmail = ({
             <strong>{typebotName}</strong>.
           </Text>
           <Text>
-            De agora em diante você verá este typebot em seu painel sob o dele
+            De agora em diante você verá este EcomBot em seu painel sob o dele
             workspace &quot;{workspaceName}&quot; 👍
           </Text>
           <Text>
