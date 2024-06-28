@@ -1,7 +1,6 @@
 import { MotionStack } from '@/components/MotionStack'
 import { Stack, Button, StackProps, Text, ButtonProps } from '@chakra-ui/react'
 import { BubbleIllustration } from './illustrations/BubbleIllustration'
-import Bubble from '../../../../../../../../packages/embeds/nextjs/src/index';
 
 type Props = StackProps & Pick<ButtonProps, 'isDisabled'>
 
