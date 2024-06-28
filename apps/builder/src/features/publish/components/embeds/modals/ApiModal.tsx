@@ -88,7 +88,7 @@ export const ApiModal = ({
             Confira a{' '}
           <TextLink
           href="https://docs.typebot.io/api-reference/chat/start-chat"
-          éExterno
+          isExternal
           >
             Referência da API
             </TextLink>{' '}
