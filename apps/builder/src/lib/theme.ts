@@ -1,17 +1,17 @@
 import {
-    accordionAnatomy,
-    alertAnatomy,
-    menuAnatomy,
-    modalAnatomy,
-    popoverAnatomy,
-    switchAnatomy,
+  accordionAnatomy,
+  alertAnatomy,
+  menuAnatomy,
+  modalAnatomy,
+  popoverAnatomy,
+  switchAnatomy,
 } from '@chakra-ui/anatomy'
 import {
-    createMultiStyleConfigHelpers,
-    defineStyleConfig,
-    extendTheme,
-    StyleFunctionProps,
-    type ThemeConfig,
+  createMultiStyleConfigHelpers,
+  defineStyleConfig,
+  extendTheme,
+  StyleFunctionProps,
+  type ThemeConfig,
 } from '@chakra-ui/react'
 import { mode } from '@chakra-ui/theme-tools'
 
@@ -43,11 +43,11 @@ export const colors = {
   blue: {
     50: '#e0edff',
     100: '#b0caff',
-    200: '#FF5700',
+    200: '#A231EB',
     300: '#4b83ff',
-    400: '#FF5700',
-    500: '#FF8200',
-    600: '#FF8200',
+    400: '#A231EB',
+    500: '#FF5700',
+    600: '#FF5700',
     700: '#002782',
     800: '#001751',
     900: '#1a202c',
