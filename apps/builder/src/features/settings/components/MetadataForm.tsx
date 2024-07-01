@@ -88,7 +88,7 @@ export const MetadataForm = ({
       </Stack>
       <Stack>
         <FormLabel mb="0" htmlFor="image">
-          Imagem Preview:
+        Preview da Imagem:
         </FormLabel>
         <Popover isLazy placement="top">
           <PopoverTrigger>
