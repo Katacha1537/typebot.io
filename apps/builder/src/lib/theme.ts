@@ -1,19 +1,19 @@
 import {
-  createMultiStyleConfigHelpers,
-  defineStyleConfig,
-  extendTheme,
-  StyleFunctionProps,
-  type ThemeConfig,
+    accordionAnatomy,
+    alertAnatomy,
+    menuAnatomy,
+    modalAnatomy,
+    popoverAnatomy,
+    switchAnatomy,
+} from '@chakra-ui/anatomy'
+import {
+    createMultiStyleConfigHelpers,
+    defineStyleConfig,
+    extendTheme,
+    StyleFunctionProps,
+    type ThemeConfig,
 } from '@chakra-ui/react'
 import { mode } from '@chakra-ui/theme-tools'
-import {
-  alertAnatomy,
-  accordionAnatomy,
-  menuAnatomy,
-  modalAnatomy,
-  popoverAnatomy,
-  switchAnatomy,
-} from '@chakra-ui/anatomy'
 
 const config: ThemeConfig = {
   initialColorMode: 'system',
@@ -38,16 +38,16 @@ export const colors = {
     700: '#3f3f46',
     800: '#27272a',
     850: '#1f1f23',
-    900: '#18181b',
+    900: '#110E0F',
   },
   blue: {
     50: '#e0edff',
     100: '#b0caff',
-    200: '#7ea6ff',
+    200: '#FF5700',
     300: '#4b83ff',
     400: '#FF5700',
     500: '#A231EB',
-    600: '#0036b4',
+    600: '#A231EB',
     700: '#002782',
     800: '#001751',
     900: '#1a202c',

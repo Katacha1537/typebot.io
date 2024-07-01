@@ -2,8 +2,8 @@ import { StartTypebot } from '@typebot.io/schemas'
 import { BubbleBlockType } from '@typebot.io/schemas/features/blocks/bubbles/constants'
 import { InputBlockType } from '@typebot.io/schemas/features/blocks/inputs/constants'
 import {
-  ComparisonOperators,
-  LogicalOperator,
+    ComparisonOperators,
+    LogicalOperator,
 } from '@typebot.io/schemas/features/blocks/logic/condition/constants'
 import { LogicBlockType } from '@typebot.io/schemas/features/blocks/logic/constants'
 import { BackgroundType } from '@typebot.io/schemas/features/typebot/theme/constants'

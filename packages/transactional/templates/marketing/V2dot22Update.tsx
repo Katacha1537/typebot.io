@@ -1,29 +1,29 @@
 import {
-  Body,
-  Container,
-  Head,
-  Html,
-  Img,
-  Link,
-  Preview,
-  Text,
-  Hr,
-  Heading,
-  Button,
-  Section,
+    Body,
+    Button,
+    Container,
+    Head,
+    Heading,
+    Hr,
+    Html,
+    Img,
+    Link,
+    Preview,
+    Section,
+    Text,
 } from '@react-email/components'
-import * as React from 'react'
 import { env } from '@typebot.io/env'
+import * as React from 'react'
 import {
-  main,
-  container,
-  text,
-  link,
-  featureSection,
-  heading,
-  image,
-  hr,
-  footer,
+    container,
+    featureSection,
+    footer,
+    heading,
+    hr,
+    image,
+    link,
+    main,
+    text,
 } from './styles'
 
 type Props = {

@@ -1,4 +1,4 @@
-import { IconProps, Icon } from '@chakra-ui/react'
+import { Icon, IconProps } from '@chakra-ui/react'
 
 export const TypebotLogo = ({
   isDark,

@@ -1,11 +1,11 @@
 import { getTestAsset } from '@/test/utils/playwright'
-import test, { expect } from '@playwright/test'
 import { createId } from '@paralleldrive/cuid2'
+import test, { expect } from '@playwright/test'
 import { importTypebotInDatabase } from '@typebot.io/playwright/databaseActions'
 import { freeWorkspaceId } from '@typebot.io/playwright/databaseSetup'
 import {
-  defaultContainerMaxHeight,
-  defaultContainerMaxWidth,
+    defaultContainerMaxHeight,
+    defaultContainerMaxWidth,
 } from '@typebot.io/schemas/features/typebot/theme/constants'
 
 const hostAvatarUrl =
