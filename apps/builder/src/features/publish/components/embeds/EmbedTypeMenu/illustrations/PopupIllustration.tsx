@@ -18,7 +18,7 @@ export const PopupIllustration = () => {
         rx="20"
         fill={useColorModeValue(colors.gray['400'], colors.gray['900'])}
       />
-      <rect x="105" y="77" width="290" height="352" rx="10" fill="#A231EB" />
+      <rect x="105" y="77" width="290" height="352" rx="10" fill="#FF8200" />
       <motion.rect
         x="171"
         y="117"

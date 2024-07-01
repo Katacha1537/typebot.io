@@ -335,7 +335,7 @@
   "folders.typebotButton.deleteConfirmationMessage": "Tem certeza de que deseja excluir seu EcomBot <strong>typebotName</strong>?",
   "folders.typebotButton.deleteConfirmationMessageWarning": "Todos os dados associados serão excluídos e não poderão ser recuperados.",
   "folders.typebotButton.duplicate": "Duplicar",
-  "folders.typebotButton.live": "Live",
+  "folders.typebotButton.live": "Ao Vivo",
   "folders.typebotButton.showMoreOptions": "Mostrar mais opções",
   "folders.typebotButton.unpublish": "Despublicar",
   "help": "Ajuda",

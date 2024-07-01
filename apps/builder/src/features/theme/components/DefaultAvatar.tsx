@@ -16,7 +16,7 @@ export const DefaultAvatar = (props: IconProps) => {
         <circle cx="37.5" cy="37.5" r="37.5" fill="#A231EB" />
       </mask>
       <g mask="url(#mask0)">
-        <rect x="-30" y="-43" width="131" height="154" fill="#A231EB" />
+        <rect x="-30" y="-43" width="131" height="154" fill="#FF8200" />
         <rect
           x="2.50413"
           y="120.333"
