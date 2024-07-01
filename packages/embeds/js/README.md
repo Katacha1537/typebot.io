@@ -106,7 +106,7 @@ Here is an example:
       avatarUrl: 'https://avatars.githubusercontent.com/u/16015833?v=4',
     },
     theme: {
-      button: { backgroundColor: '#0042DA', iconColor: '#FFFFFF' },
+      button: { backgroundColor: '#A231EB', iconColor: '#FFFFFF' },
       previewMessage: { backgroundColor: '#ffffff', textColor: 'black' },
       chatWindow: { backgroundColor: '#ffffff' },
     },

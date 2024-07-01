@@ -11,7 +11,7 @@ type Props = Pick<BubbleTheme, 'placement'> &
     buttonSize: `${number}px`
   }
 
-const defaultButtonColor = '#0042DA'
+const defaultButtonColor = '#A231EB'
 const defaultDarkIconColor = '#27272A'
 const defaultLightIconColor = '#fff'
 

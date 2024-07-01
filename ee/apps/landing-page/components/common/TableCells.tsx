@@ -5,7 +5,7 @@ import React, { ReactNode } from 'react'
 
 export const Yes = (props: { children?: ReactNode }) => (
   <Td display={props.children ? 'flex' : ''}>
-    <CheckCircleIcon fill="#0042da" width="25px" />
+    <CheckCircleIcon fill="#A231EB" width="25px" />
     {props.children && (
       <Text ml={1} fontSize="sm">
         {props.children}

@@ -160,7 +160,7 @@ test.describe.parallel('Theme page', () => {
       await page.click(
         '[data-testid="buttonsTheme"] >> [aria-label="Pick a color"] >> nth=0'
       )
-      await page.fill('input[value="#0042DA"]', '#7209b7')
+      await page.fill('input[value="#A231EB"]', '#7209b7')
       await page.click(
         '[data-testid="buttonsTheme"] >> [aria-label="Pick a color"] >> nth=1'
       )

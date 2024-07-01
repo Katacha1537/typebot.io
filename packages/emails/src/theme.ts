@@ -3,7 +3,7 @@ export const black = '#000'
 export const gold = '#fadf98'
 export const grayDark = '#888'
 export const grayLight = '#f5f5f5'
-export const blue = '#0042da'
+export const blue = '#A231EB'
 
 // Typography
 export const textSm = 14

@@ -66,7 +66,7 @@ export const V2dot22Update = ({}: Props) => (
         <Button
           href="https://app.typebot.io"
           style={{
-            backgroundColor: '#0042DA',
+            backgroundColor: '#A231EB',
             padding: '10px 16px',
             borderRadius: '4px',
             color: 'white',

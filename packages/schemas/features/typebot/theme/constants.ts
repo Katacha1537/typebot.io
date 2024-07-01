@@ -27,7 +27,7 @@ export const defaultBackgroundColor = '#ffffff'
 
 // Progress bar
 export const defaultProgressBarIsEnabled = false
-export const defaultProgressBarColor = '#0042DA'
+export const defaultProgressBarColor = '#A231EB'
 export const defaultProgressBarBackgroundColor = '#e0edff'
 export const defaultProgressBarThickness = 4
 export const defaultProgressBarPosition = 'absolute'
@@ -54,7 +54,7 @@ export const defaultGuestBubblesBackgroundColor = '#FF8E21'
 export const defaultGuestBubblesColor = defaultDarkTextColor
 
 // Buttons
-export const defaultButtonsBackgroundColor = '#0042DA'
+export const defaultButtonsBackgroundColor = '#A231EB'
 export const defaultButtonsColor = defaultDarkTextColor
 export const defaultButtonsBorderThickness = 1
 

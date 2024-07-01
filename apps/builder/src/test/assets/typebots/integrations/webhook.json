@@ -101,7 +101,7 @@
         "backgroundColor": "#FFFFFF",
         "placeholderColor": "#9095A0"
       },
-      "buttons": { "color": "#FFFFFF", "backgroundColor": "#0042DA" },
+      "buttons": { "color": "#FFFFFF", "backgroundColor": "#A231EB" },
       "hostBubbles": { "color": "#303235", "backgroundColor": "#F7F8FF" },
       "guestBubbles": { "color": "#FFFFFF", "backgroundColor": "#FF8E21" }
     },

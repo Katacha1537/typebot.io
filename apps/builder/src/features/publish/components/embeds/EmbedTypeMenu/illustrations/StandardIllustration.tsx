@@ -22,7 +22,7 @@ export const StandardIllustration = () => {
       <rect x="49" y="49" width="108" height="109" rx="10" fill={gray} />
       <rect x="188" y="74" width="263" height="25" rx="5" fill={gray} />
       <rect x="188" y="111" width="263" height="25" rx="5" fill={gray} />
-      <rect x="49" y="189" width="402" height="262" rx="10" fill="#0042DA" />
+      <rect x="49" y="189" width="402" height="262" rx="10" fill="#A231EB" />
 
       <motion.rect
         variants={animationVariants}

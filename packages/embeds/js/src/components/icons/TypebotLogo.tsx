@@ -1,7 +1,7 @@
 export const TypebotLogo = () => {
   return (
     <svg viewBox="0 0 800 800" width={16}>
-      <rect width="800" height="800" rx="80" fill="#0042DA" />
+      <rect width="800" height="800" rx="80" fill="#A231EB" />
       <rect
         x="650"
         y="293"

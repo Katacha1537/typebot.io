@@ -18,7 +18,7 @@ export const BubbleIllustration = () => {
         rx="20"
         fill={useColorModeValue(colors.gray['200'], colors.gray['900'])}
       />
-      <rect x="164" y="59" width="287" height="305" rx="10" fill="#0042DA" />
+      <rect x="164" y="59" width="287" height="305" rx="10" fill="#A231EB" />
       <motion.rect
         x="227"
         y="91"
@@ -71,7 +71,7 @@ export const BubbleIllustration = () => {
         variants={animationVariants}
       />
 
-      <circle cx="411" cy="430" r="40" fill="#0042DA" />
+      <circle cx="411" cy="430" r="40" fill="#A231EB" />
     </svg>
   )
 }

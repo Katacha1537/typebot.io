@@ -65,7 +65,7 @@
     "chat": {
       "hostBubbles": { "backgroundColor": "#F7F8FF", "color": "#303235" },
       "guestBubbles": { "backgroundColor": "#FF8E21", "color": "#FFFFFF" },
-      "buttons": { "backgroundColor": "#0042DA", "color": "#FFFFFF" },
+      "buttons": { "backgroundColor": "#A231EB", "color": "#FFFFFF" },
       "inputs": {
         "backgroundColor": "#FFFFFF",
         "color": "#303235",

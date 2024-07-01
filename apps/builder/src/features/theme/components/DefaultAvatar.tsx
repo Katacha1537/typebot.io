@@ -13,10 +13,10 @@ export const DefaultAvatar = (props: IconProps) => {
       {...props}
     >
       <mask id="mask0" x="0" y="0" mask-type="alpha">
-        <circle cx="37.5" cy="37.5" r="37.5" fill="#0042DA" />
+        <circle cx="37.5" cy="37.5" r="37.5" fill="#A231EB" />
       </mask>
       <g mask="url(#mask0)">
-        <rect x="-30" y="-43" width="131" height="154" fill="#0042DA" />
+        <rect x="-30" y="-43" width="131" height="154" fill="#A231EB" />
         <rect
           x="2.50413"
           y="120.333"
